@@ -7,6 +7,7 @@ Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
 * Thiago Caetano Dantas
 * Lucas Pereira de Souza
 * Matheus Felipe da Silva
+* Rafael Sanzio e Silva
 
 ## Professores responsáveis
 
