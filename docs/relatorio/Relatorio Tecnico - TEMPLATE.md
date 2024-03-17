@@ -14,8 +14,11 @@
 > Inclua a lista dos membros da equipe com seus nomes completos.
 >
 > Os membros do grupo são: 
-> - Fulano da Silva
-> - Ciclano Albuquerque
+> - Rafael Sanzio e Silva
+> - Matheus Felipe da Silva
+> - Thiago Caetano Dantas
+> - Lucas Pereira de Souza
+> - Pedro Henrique Resende Menezes
 
 # Estrutura do Documento
 
