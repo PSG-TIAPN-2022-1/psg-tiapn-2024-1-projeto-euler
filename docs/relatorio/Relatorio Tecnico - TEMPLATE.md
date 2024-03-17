@@ -186,21 +186,23 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID     | Descrição do Requisito  | Prioridade |
 |------ |-----------------------------------------|----|
-|RF-001 | O site permite que os usuários cadastrem-se | ALTA | 
-|RF-002 | O site permite o login uma conta criada para poderem acessar conteúdo e produtos | ALTA |
-|RF-003 | O site poderá ter um espaço para que os usuários possam se interar sobre as descrições dos produtos  | ALTA |
-|RF-004 | O site permite que os usuários possam se interar sobre os eventos relacionados ao projeto | ALTA |
-|RF-005 | O site apresentara uma descrição do produto incluindo informações , imagens e avaliações  | ALTA |
-|RF-006 | O site informará sobre as motivações da representante para a realização deste projeto  | MÉDIA |
-|RF-007 | O site permite que os usuários acessem a uma página de descrição de benefícios da Aromaterapia e da Arte  | MÉDIA |
+|RF-001 | Criação de um Banco de Dados | ALTA | 
+|RF-002 | Criação de um sistema de compras | ALTA |
+|RF-003 | Criação de uma página para detalhes dos produtos  | ALTA |
+|RF-004 | Criação de uma página para perfil da conta | ALTA |
+|RF-005 | Criação de um Menu de produtos/produções | MÉDIA |
+|RF-006 | Criação de uma página de Carrinho de compras  | ALTA |
+|RF-007 |Criação de uma Tela de sobre  | MÉDIA |
+
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
+|RNF-001| Escalabilidade | ALTA | 
+|RNF-002| Usabilidade |  MÉDIA | 
+|RNF-003| Confiabilidade |  ALTA | 
+|RNF-004| Portabilidade|  BAIXA | 
 > Com base nas Histórias de Usuário, enumere os requisitos da sua
 > solução. Classifique esses requisitos em dois grupos:
 >
