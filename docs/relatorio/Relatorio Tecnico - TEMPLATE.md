@@ -11,12 +11,12 @@
 
 ......  COLOQUE AQUI O SEU TEXTO ......
 
-> Os membros do grupo são: 
-> - Rafael Sanzio e Silva
-> - Matheus Felipe da Silva
-> - Thiago Caetano Dantas
-> - Lucas Pereira de Souza
-> - Pedro Henrique Resende Menezes
+ Os membros do grupo são: 
+ - Rafael Sanzio e Silva
+ - Matheus Felipe da Silva
+ - Thiago Caetano Dantas
+ - Lucas Pereira de Souza
+ - Pedro Henrique Resende Menezes
 
 # Estrutura do Documento
 
