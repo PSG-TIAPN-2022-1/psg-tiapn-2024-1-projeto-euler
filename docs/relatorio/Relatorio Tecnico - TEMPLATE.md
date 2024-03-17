@@ -184,11 +184,15 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
-
+|ID     | Descrição do Requisito  | Prioridade |
+|------ |-----------------------------------------|----|
+|RF-001 | O site permite que os usuários cadastrem-se | ALTA | 
+|RF-002 | O site permite o login uma conta criada para poderem acessar conteúdo e produtos | ALTA |
+|RF-003 | O site poderá ter um espaço para que os usuários possam se interar sobre as descrições dos produtos  | ALTA |
+|RF-004 | O site permite que os usuários possam se interar sobre os eventos relacionados ao projeto | ALTA |
+|RF-005 | O site apresentara uma descrição do produto incluindo informações , imagens e avaliações  | ALTA |
+|RF-006 | O site informará sobre as motivações da representante para a realização deste projeto  | MÉDIA |
+|RF-007 | O site permite que os usuários acessem a uma página de descrição de benefícios da Aromaterapia e da Arte  | MÉDIA |
 
 ### Requisitos não Funcionais
 
