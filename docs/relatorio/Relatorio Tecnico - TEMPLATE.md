@@ -11,8 +11,6 @@
 
 ......  COLOQUE AQUI O SEU TEXTO ......
 
-> Inclua a lista dos membros da equipe com seus nomes completos.
->
 > Os membros do grupo são: 
 > - Rafael Sanzio e Silva
 > - Matheus Felipe da Silva
