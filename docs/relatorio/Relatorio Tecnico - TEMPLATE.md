@@ -62,19 +62,9 @@ O site terá como funcionalidades a exibição de obras em formato de blog, vend
 
 ## Justificativa
 
-......  COLOQUE AQUI O SEU TEXTO ......
+O motivo deste trabalho é, através dos conhecimentos adquiridos dento da faculdade, auxíliar alguém que realiza atividade voltada ao próximo (atividade social). No caso desse projeto em questão, visamos por auxiliar a professora de artes Kelly a superar desafios na gestão e divulgação de seu trabalho, esta que realiza cursos e palestras para comunidades como Igrejas e Intituições filantrópicas, ambas sem fins lucreativos. 
 
-> Descreva a importância ou a motivação para trabalhar com esta aplicação
-> que você escolheu. Indique as razões pelas quais você escolheu seus
-> objetivos específicos ou as razões para aprofundar em certos aspectos
-> do software.
-> 
-> O grupo de trabalho pode fazer uso de questionários, entrevistas e
-> dados estatísticos, que podem ser apresentados, com o objetivo de
-> esclarecer detalhes do problema que será abordado pelo grupo.
->
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Além disso, o trabalho foi pensado em proporcionar um ambiente de aprendizado e desenvolvimento profissional. O mesmo buscar permitir a aplicação e aprofundamento de conhecimento em diversas áreaas da computação, aprendizado de novas tecnologias e o desenvolvimento de habilidades interpessoais essenciais para o sucesso dentro do mercado de trabalho. 
 
 ## Público-Alvo
 
