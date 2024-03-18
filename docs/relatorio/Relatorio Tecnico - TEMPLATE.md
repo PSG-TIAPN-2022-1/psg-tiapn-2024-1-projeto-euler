@@ -56,7 +56,9 @@ A aplicação busca resolver a falta de funcionalidades e versatilidade do site 
 
 ## Objetivos
 
-O trabalho de extensão tem como objetivo expandir a visibilidade e a acessibilidade dos serviços oferecidos pela professora de artes Kelly Fonseca, que se incluem como Aromaterapia, arte visual e fotografia, além de realizar trabalhos para caridade e serviços para igreja. Com interesses em relações de pertencimento que estão na memória, no corpo e no espaço. O site terá como funcionalidades a exibição de obras em formato de blog, venda de cosméticos e séries de diversas fotografias e desenhos entre outros, exposições que esteve e estará presente e uma aba que descreve todo seu portfolio, cursos e uma pequena biografia.
+O trabalho de extensão tem como objetivo expandir a visibilidade e a acessibilidade dos serviços oferecidos pela professora de artes Kelly Fonseca, que se incluem como Aromaterapia, arte visual e fotografia, além de realizar trabalhos para caridade e serviços para igreja. Com interesses em relações de pertencimento que estão na memória, no corpo e no espaço. 
+
+O site terá como funcionalidades a exibição de obras em formato de blog, venda de cosméticos e séries de diversas fotografias e desenhos entre outros, exposições que esteve e estará presente e uma aba que descreve todo seu portfolio, cursos e uma pequena biografia.
 
 ## Justificativa
 
@@ -86,9 +88,10 @@ Podemos concluir de forma textual que nosso público alvo se concentra em:
 
 * Interessados em comprar produtos de arte ou/e aromaterapia
 
+
 Através do **Mapa de StakeHolders** podemos ter essa visão:
 
-![Mapa de Stakeholders](imagens/Mapa_StakeHolders.jpg)
+![Mapa de Stakeholders](images/Mapa_StakeHolders.jpg)
 
 # Especificações do Projeto
 
@@ -157,12 +160,14 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 # Projeto de Interface
 
-As principais interfaces foram desenvolvidas do projeto se tratam das que convergem entre as áreas de artes e de aromaterapia. Responsáveis por permitir que as duas atividades caraácteristicas da benefíciaria consigam coexixtir no mesmo site, ainda sem desvalorizar um ao outro. Tal estratégia soma com as hitórias de usuários, graças ao objetivo de valorizar ambas áreas independente do clinete. Associado aos quesitos de confiabilidade e divulgação dos produtos, a interface busca tratar o usuário de forma pessoal, seja pela paleta de cores acolhedora ou através das informações realativas as obras e a própria beneficiária.
+As principais interfaces foram desenvolvidas do projeto se tratam das que convergem entre as áreas de artes e de aromaterapia. Responsáveis por permitir que as duas atividades caraácteristicas da benefíciaria consigam coexixtir no mesmo site, ainda sem desvalorizar um ao outro. 
+
+Tal estratégia soma com as hitórias de usuários, graças ao objetivo de valorizar ambas áreas independente do clinete. Associado aos quesitos de confiabilidade e divulgação dos produtos, a interface busca tratar o usuário de forma pessoal, seja pela paleta de cores acolhedora ou através das informações realativas as obras e a própria beneficiária.
 
 ## User Flow
 
 Sequência completa de telas que o usuário pode acessar no site em suas respectivas conexões:
-![UserFlow](images/UserFlow.jpg)
+![UserFlow](images/UserFlow.png)
 
 ## Wireframes
 
@@ -176,8 +181,6 @@ Sequência completa de telas que o usuário pode acessar no site em suas respect
 
 # Metodologia
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
 Conforme as metódologias ágeis de produção, o projeto se baseia no Scrum e em sua estratégia de produção e avaliação contínua dos resultados de nosso produto. Enquanto para divisão de pepéis e tarefas, o projeto usa o site "Trello" para demais funções de organização e contextualizaçao dos membros quanto seus papéis no desenvolvimento e no processo de criação. A soma de tais metodologias tornam a organização viável e intuitiva, permitindo assim, aos poucos concretizarmos nosso objetivo.  
 
 A implementação do Scrum é essencial na elaboração do design thinking e para gestão das demais ferramentas auxíliares. Propondo os problemas de forma clara com as Sprints e reuniões semanais, fomos capazes de coordenar o que havia de ser feito em seu tempo apropriado. Nesse contexto entra a utilizaçao do GitHub e configuração de sua plataforma, pois na medida que se clareava os meios como progredir com o projeto, a documentação sempre auxília no que ainda havia de ser feito ou pensado. Por fim, o Trello realiza a ponte entre a função de documentar e armazenar (GitHub) com a de organizar e criar metas (Scrum). Nesses elementos que se baseia a metodologia do projeto.
@@ -185,7 +188,7 @@ A implementação do Scrum é essencial na elaboração do design thinking e par
 ## Divisão de Papéis
 
 É feita baseada em cada integrante e suas reespectivas facilidades, porém, carecendo a todos programarem a partir da Sprint 2:
-![Divisão de tarefas Sprint 1](images/Divisao_Tarefas)
+![Divisão de tarefas Sprint 1](images/Divisao_Tarefas.png)
 
 
 ## Ferramentas
@@ -202,7 +205,9 @@ A implementação do Scrum é essencial na elaboração do design thinking e par
 
 ## Controle de Versão
 
-Nesse quesito o projeto busca como referência as melhores estrtégias de versionamento e hospedágem em nosso repositório do GitHub. As branchs usadas modelam nomes profissionais usados na industria, tais como: "main", "unstable", "testing", "dev". Enquanto para a gerência dos issues, será usado as seguintes etiquetas: "bugfix","enchancement","feature". Os commits seralizados serão realizados com nomes descritivos quanto a suas reespectivas operações, de forma a destacar qual versão do cídigo se trata. Nas demais branch que não sejam a "main" é escrito todas mudanças feitas na versão, assim permitindo a caominicação direta do que foi feito e do que precisa ser feito no próprio arquivo.
+Nesse quesito o projeto busca como referência as melhores estrtégias de versionamento e hospedágem em nosso repositório do GitHub. As branchs usadas modelam nomes profissionais usados na industria, tais como: "main", "unstable", "testing", "dev". Enquanto para a gerência dos issues, será usado as seguintes etiquetas: "bugfix","enchancement","feature". 
+
+Os commits seralizados serão realizados com nomes descritivos quanto a suas reespectivas operações, de forma a destacar qual versão do cídigo se trata. Nas demais branch que não sejam a "main" é escrito todas mudanças feitas na versão, assim permitindo a caominicação direta do que foi feito e do que precisa ser feito no próprio arquivo.
 
 _FIM DO SPRINT 1_
 
