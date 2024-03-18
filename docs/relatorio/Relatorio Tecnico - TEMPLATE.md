@@ -88,7 +88,7 @@ Podemos concluir de forma textual que nosso público alvo se concentra em:
 
 Através do **Mapa de StakeHolders** podemos ter essa visão:
 
-![Mapa de Stakeholders](/imagens/Mapa_StakeHolders.jpg)
+![Mapa de Stakeholders](imagens/Mapa_StakeHolders.jpg)
 
 # Especificações do Projeto
 
@@ -97,16 +97,16 @@ Nessa sessão entraremos em detalhes sobre o usuário que terá acesso ao site, 
 ## Personas e Mapas de Empatia
 
 ### Persona 1
-![Persona 1](/images/Persona1)
-![Persona 1 - Mapa de Empatia](/images/Persona1-Empatia)
+![Persona 1](images/Persona1)
+![Persona 1 - Mapa de Empatia](images/Persona1-Empatia)
 
 ### Persona 2
-![Persona 2](/images/Persona2)
-![Persona 2 - Mapa de Empatia](/images/Persona2-Empatia)
+![Persona 2](images/Persona2)
+![Persona 2 - Mapa de Empatia](images/Persona2-Empatia)
 
 ### Persona 3
-![Persona 3](/images/Persona3)
-![Persona 3 - Mapa de Empatia](/images/Persona3-Empatia)
+![Persona 3](images/Persona3)
+![Persona 3 - Mapa de Empatia](images/Persona3-Empatia)
 
 ## Histórias de Usuários
 
