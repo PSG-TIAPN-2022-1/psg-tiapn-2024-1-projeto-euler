@@ -1,5 +1,6 @@
 # Projeto Euler
-Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
+Busca criar o site de portifólio de uma artista e aromaterapeuta que realiza atividades humanistas em igrejas.
+Realizado através das demais linguagens Web (HTML, CSS, JS) em parceria a implementação de Banco de Dados (Fire Store)
 
 ## Alunos integrantes da equipe
 
