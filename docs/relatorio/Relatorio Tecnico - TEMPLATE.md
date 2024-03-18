@@ -182,9 +182,9 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
 |RNF-001| Escalabilidade | ALTA | 
-|RNF-002| Usabilidade |  MÉDIA | 
+|RNF-002| Usabilidade |  ALTA | 
 |RNF-003| Confiabilidade |  ALTA | 
-|RNF-004| Portabilidade|  BAIXA | 
+|RNF-004| Portabilidade|  MÉDIA | 
 
 
 ## Restrições
@@ -194,7 +194,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|02| O projeto deverá estar dentro do orçamento            |
 |03| 
 
 # Projeto de Interface
