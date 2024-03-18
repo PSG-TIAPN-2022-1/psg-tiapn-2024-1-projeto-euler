@@ -29,23 +29,23 @@ Por fim os requisitos foram obtidos, em parte pelas funções implementas no ant
 
 ### Requisitos Funcionais:  
 
-. Aplicação de Banco de dados; 
-. Sistema de compras integrado; 
-. Visão para detalhes dos produtos; 
-. Tela de perfil interativa; 
-. Menu de obras e postagens; 
-. Artigo com informações sobre a beneficiária; 
-. Carrinho de compras do perfil; 
+* Aplicação de Banco de dados; 
+* Sistema de compras integrado; 
+* Visão para detalhes dos produtos; 
+* Tela de perfil interativa; 
+* Menu de obras e postagens; 
+* Artigo com informações sobre a beneficiária; 
+* Carrinho de compras do perfil; 
 
  
 
 ### Requisitos Não funcionais:  
 
-. Capacidade de manutenção; 
-.Escalabilidade; 
-. Usabilidade; 
-. Confiabilidade; 
-. Portabilidade; 
+* Capacidade de manutenção; 
+* Escalabilidade; 
+* Usabilidade; 
+* Confiabilidade; 
+* Portabilidade; 
 
 ## Fase 2: Escolha do Estilo Arquitetural 
 
