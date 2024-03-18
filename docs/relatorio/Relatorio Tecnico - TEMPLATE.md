@@ -56,7 +56,7 @@ A aplicação busca resolver a falta de funcionalidades e versatilidade do site 
 
 ## Objetivos
 
-O trabalho de extensão tem como objetivo expandir a visibilidade e a acessibilidade dos serviços oferecidos pela professora de artes Kelly Fonseca, que se incluem como Aromaterapia, arte visual e fotografia, além de realizar trabalhos para caridade e serviços para igreja. Com interesses em relações de pertencimento que estão na memória, no corpo e no espaço. O site terá como funcionalidades a exibição de obras em formato de blog, venda de cosméticos e séries de diversas fotografias e desenhos entre outros, exposições que esteve e estará presente e uma aba que descreve todo seu portfólio, cursos e uma pequena biografia.
+O trabalho de extensão tem como objetivo expandir a visibilidade e a acessibilidade dos serviços oferecidos pela professora de artes Kelly Fonseca, que se incluem como Aromaterapia, arte visual e fotografia, além de realizar trabalhos para caridade e serviços para igreja. Com interesses em relações de pertencimento que estão na memória, no corpo e no espaço. O site terá como funcionalidades a exibição de obras em formato de blog, venda de cosméticos e séries de diversas fotografias e desenhos entre outros, exposições que esteve e estará presente e uma aba que descreve todo seu portfolio, cursos e uma pequena biografia.
 
 ## Justificativa
 
@@ -97,16 +97,16 @@ Nessa sessão entraremos em detalhes sobre o usuário que terá acesso ao site, 
 ## Personas e Mapas de Empatia
 
 ### Persona 1
-![Persona 1](images/Persona1)
-![Persona 1 - Mapa de Empatia](images/Persona1-Empatia)
+![Persona 1](images/Persona1.png)
+![Persona 1 - Mapa de Empatia](images/Persona1-Empatia.jpg)
 
 ### Persona 2
-![Persona 2](images/Persona2)
-![Persona 2 - Mapa de Empatia](images/Persona2-Empatia)
+![Persona 2](images/Persona2.png)
+![Persona 2 - Mapa de Empatia](images/Persona2-Empatia.jpg)
 
 ### Persona 3
-![Persona 3](images/Persona3)
-![Persona 3 - Mapa de Empatia](images/Persona3-Empatia)
+![Persona 3](images/Persona3.png)
+![Persona 3 - Mapa de Empatia](images/Persona3-Empatia.jpg)
 
 ## Histórias de Usuários
 
@@ -114,8 +114,9 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Professora  | Velas artesanais que tranquilizem a mente            | Melhorar o ambiente de sala de aula |
-|Tatuador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Professora  | Comprar velas artesanais que tranquilizem a mente | Melhorar o ambiente de sala de aula |
+|Tatuador       | Saber como divulgar obras | Auxiliar na venda e valorização de minhas obras autorais |
+|Estudante de artes | Ganhar inspiriação e aprendizado | Melhorar minhas obras e meu autoconhecimento artístico | 
 
 ## Requisitos
 
@@ -151,8 +152,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-|03| 
+|02| Ser desenvolvido em arquitetura monolítica |
+|03| Design poluído ou repleto de informações desnecessárias |
 
 # Projeto de Interface
 
@@ -168,36 +169,23 @@ Sequência completa de telas que o usuário pode acessar no site em suas respect
 * Acesso completo e interativo pode ser feito através desse [link](https://www.figma.com/file/qE84wuzvtWN12kfAvU9sXg/WireFrame-Projeto-Euler?type=design&node-id=0%3A1&mode=design&t=XHy2fnJw74t7gdrS-1)
 
 * Descrição tela por tela:
-  * ![Telas de Pré-Menu](images/Pré-Menu.png) Pré-Menus
-  * ![Telas de Menu](images/Menus.png) Menus
-  * ![Telas de loja e detalhes do produto](images/Lojas.png) Lojas
-  * ![Telas de sobre](images/Sobres.png) Sobres
-
-......  INCLUA AQUI OS WIREFRAMES DAS TELAS DA APLICAÇÃO COM UM BREVE DESCRITIVO ......
+  * ![Telas de Pré-Menu](images/Pré-Menu.png) Pré-Menus: Páginas iniciais que dividem qual assunto terá enfâse: Artes ou Aromaterapia
+  * ![Telas de Menu](images/Menus.png) Menus: Aproxima as princípais e mais chamativas informações para reter o usuário 
+  * ![Telas de loja e detalhes do produto](images/Lojas.png) Lojas e detalhes do produto: Onde é feito a escolha do produto e adção do mesmo ao carrinho do usuário 
+  * ![Telas de sobre](images/Sobres.png) Sobres: Informa questões profissionais sobre a beneficiária e suas conexões com a Arte e Aromaterapia 
 
 # Metodologia
 
 ......  COLOQUE AQUI O SEU TEXTO ......
 
-> Nesta parte do documento, você deve apresentar a metodologia 
-> adotada pelo grupo, descrevendo o processo de trabalho baseado nas metodologias ágeis, 
-> a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a
-> gestão de configuração do projeto via GitHub.
->
-> Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido
-> pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar
-> o andamento do projeto, a execução das tarefas e o status de desenvolvimento
-> da solução.
-> 
-> **Links Úteis**:
-> - [Tutorial Trello](https://trello.com/b/8AygzjUA/tutorial-trello)
-> - [Gestão ágil de projetos com o Trello](https://www.youtube.com/watch?v=1o9BOMAKBRE)
-> - [Gerência de projetos - Trello com Scrum](https://www.youtube.com/watch?v=DHLA8X_ujwo)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+Conforme as metódologias ágeis de produção, o projeto se baseia no Scrum e em sua estratégia de produção e avaliação contínua dos resultados de nosso produto. Enquanto para divisão de pepéis e tarefas, o projeto usa o site "Trello" para demais funções de organização e contextualizaçao dos membros quanto seus papéis no desenvolvimento e no processo de criação. A soma de tais metodologias tornam a organização viável e intuitiva, permitindo assim, aos poucos concretizarmos nosso objetivo.  
+
+A implementação do Scrum é essencial na elaboração do design thinking e para gestão das demais ferramentas auxíliares. Propondo os problemas de forma clara com as Sprints e reuniões semanais, fomos capazes de coordenar o que havia de ser feito em seu tempo apropriado. Nesse contexto entra a utilizaçao do GitHub e configuração de sua plataforma, pois na medida que se clareava os meios como progredir com o projeto, a documentação sempre auxília no que ainda havia de ser feito ou pensado. Por fim, o Trello realiza a ponte entre a função de documentar e armazenar (GitHub) com a de organizar e criar metas (Scrum). Nesses elementos que se baseia a metodologia do projeto.
 
 ## Divisão de Papéis
 
-A divisão de papéis feita está baseada em:
+É feita baseada em cada integrante e suas reespectivas facilidades, porém, carecendo a todos programarem a partir da Sprint 2:
+![Divisão de tarefas Sprint 1](images/Divisao_Tarefas)
 
 
 ## Ferramentas
@@ -213,8 +201,6 @@ A divisão de papéis feita está baseada em:
 |Plataforma de hospedagem | HostGator | none |
 
 ## Controle de Versão
-
-......  COLOQUE AQUI O SEU TEXTO ......
 
 Nesse quesito o projeto busca como referência as melhores estrtégias de versionamento e hospedágem em nosso repositório do GitHub. As branchs usadas modelam nomes profissionais usados na industria, tais como: "main", "unstable", "testing", "dev". Enquanto para a gerência dos issues, será usado as seguintes etiquetas: "bugfix","enchancement","feature". Os commits seralizados serão realizados com nomes descritivos quanto a suas reespectivas operações, de forma a destacar qual versão do cídigo se trata. Nas demais branch que não sejam a "main" é escrito todas mudanças feitas na versão, assim permitindo a caominicação direta do que foi feito e do que precisa ser feito no próprio arquivo.
 
