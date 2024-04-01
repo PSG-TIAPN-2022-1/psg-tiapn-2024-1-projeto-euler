@@ -1,10 +1,10 @@
 # Informações do Projeto
 
-......  PROJETO EULER ......
+## Título: PROJETO EULER
 
-......  SISTEMAS DE INFORMAÇÂO ......
+## Curso: SISTEMAS DE INFORMAÇÂO
 
-......  PARTICIPANTES ......
+### PARTICIPANTES:
 
  Os membros do grupo são: 
  * Rafael Sanzio e Silva
