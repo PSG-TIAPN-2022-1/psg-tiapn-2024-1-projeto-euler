@@ -37,9 +37,9 @@
   - [Divisão de Papéis](#divisão-de-papéis)
   - [Ferramentas](#ferramentas)
   - [Controle de Versão](#controle-de-versão)
-- [Modelagem de Processo de Negócios - MPN](#modelagem-de-processo-de-negócios---mpn)
+- [Modelagem do Processo de Negócio](#modelagem-do-processo-de-negócio)
   - [Análise da Situação Atual](#análise-da-situação-atual)
-  - [Descrição dos Processos Aprimorados](#descrição-dos-processo-aprimorados)
+  - [Descrição dos Processos Aprimorados](#descrição-dos-processos-aprimorados)
 - [Projeto da Solução](#projeto-da-solução)
   - [Tecnologias Utilizadas](#tecnologias-utilizadas)
   - [Arquitetura da solução](#arquitetura-da-solução)
@@ -201,7 +201,7 @@ Nesse quesito o projeto busca como referência as melhores estrtégias de versio
 
 Os commits seralizados serão realizados com nomes descritivos quanto a suas reespectivas operações, de forma a destacar qual versão do cídigo se trata. Nas demais branch que não sejam a "main" é escrito todas mudanças feitas na versão, assim permitindo a caominicação direta do que foi feito e do que precisa ser feito no próprio arquivo.
 
-# Modelagem de Processo de Negócio - MPN
+# Modelagem do Processo de Negócio
 
 ## Análise da Situação Atual
 
