@@ -37,7 +37,7 @@
   - [Divisão de Papéis](#divisão-de-papéis)
   - [Ferramentas](#ferramentas)
   - [Controle de Versão](#controle-de-versão)
-- [Modelagem de Processo de Negócios - MPN](#modelagem-de-processo-de-negócios-mpn)
+- [Modelagem de Processo de Negócios - MPN](#modelagem-de-processo-de-negócios---mpn)
   - [Análise da Situação Atual](#análise-da-situação-atual)
   - [Descrição dos Processos Aprimorados](#descrição-dos-processo-aprimorados)
 - [Projeto da Solução](#projeto-da-solução)
