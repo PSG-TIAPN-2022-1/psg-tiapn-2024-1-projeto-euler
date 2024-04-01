@@ -198,7 +198,11 @@ Nesse quesito o projeto busca como referência as melhores estrtégias de versio
 
 Os commits seralizados serão realizados com nomes descritivos quanto a suas reespectivas operações, de forma a destacar qual versão do cídigo se trata. Nas demais branch que não sejam a "main" é escrito todas mudanças feitas na versão, assim permitindo a caominicação direta do que foi feito e do que precisa ser feito no próprio arquivo.
 
-_FIM DO SPRINT 1_
+# Modelagem de Processo de Negócio - MPN
+
+## Análise da Situação Atual
+
+## Descrição dos Processos Aprimorados
 
 # Projeto da Solução
 
