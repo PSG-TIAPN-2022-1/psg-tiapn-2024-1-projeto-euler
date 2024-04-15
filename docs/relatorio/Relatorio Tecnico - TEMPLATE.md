@@ -206,6 +206,7 @@ Os commits seralizados serão realizados com nomes descritivos quanto a suas ree
 ## Análise da Situação Atual
 
 ## Descrição dos Processos Aprimorados
+![AS-IS](images/AS-IS.png)
 
 # Projeto da Solução
 
