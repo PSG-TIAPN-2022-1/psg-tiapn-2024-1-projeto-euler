@@ -210,7 +210,7 @@ Os commits seralizados serão realizados com nomes descritivos quanto a suas ree
 
 # Projeto da Solução
 
-## Melhoria da Comunicação e Divulgação:
+### Melhoria da Comunicação e Divulgação:
 Definir o Público-Alvo: Compreender as necessidades, interesses e canais de comunicação preferidos do público-alvo é fundamental para direcionar as mensagens de forma eficaz.
 
 Estabelecer Mensagens Claras e Concisas: A comunicação deve ser clara, direta e fácil de entender, utilizando linguagem acessível e evitando termos técnicos complexos.
@@ -221,13 +221,13 @@ Criar Conteúdo Atraente e Relevante: O conteúdo deve ser informativo, engajado
 
 Monitorar e Avaliar os Resultados: É importante monitorar o desempenho das campanhas de comunicação e avaliar os resultados para identificar o que funciona e o que precisa ser ajustado.
 
-## Desenvolver um Website Moderno e Funcional:
+### Desenvolver um Website Moderno e Funcional:
 
 Design Intuitivo e Acessível: O website deve ter um design intuitivo e amigável, facilitando a navegação e o acesso às informações.
 Conteúdo Informativo e Atualizado: O website deve conter informações completas e atualizadas sobre a organização, seus produtos, serviços e trabalhos ofertados.
 Recursos Interativos: Incluir recursos interativos como formulários de contato, área de doações e calendário de eventos pode aumentar o engajamento dos visitantes.
 
-## Utilizar Redes Sociais para Engajamento:
+### Utilizar Redes Sociais para Engajamento:
 
 Compartilhar Conteúdo de Qualidade: Publicar conteúdo de qualidade regularmente, como artigos, vídeos e fotos..
 Interagir com o Público: Responder a comentários e mensagens, realizar concursos e promoções e conversar com os seguidores são formas de aumentar o engajamento.
