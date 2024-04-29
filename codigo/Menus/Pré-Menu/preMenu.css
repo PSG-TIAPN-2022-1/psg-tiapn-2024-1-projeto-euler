@@ -9,6 +9,7 @@
 }
 .esquerda{
     background-color: #9BB8CD;
+    background-image: url(tra);
 }
 .direita{
     background-color: #5F5D9C;
@@ -16,4 +17,33 @@
 .row h1{
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
+    white-space: nowrap;
+    position:absolute;
+}
+.esquerda:hover {
+    background-color: #7EA6BD; 
+    transition: background-color 0.3s; 
+}
+
+.direita:hover {
+    background-color: #4C4A8A; 
+    transition: background-color 0.3s; 
+}
+.esquerda:focus, .direita:focus {
+    outline: none; 
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5); 
+}
+.description{
+    transition: opacity 0.5s;
+    opacity: 0;
+    position: relative;
+    top: 10%;
+    width: 70%;
+}
+.esquerda:hover .description, .direita:hover .description {
+    opacity:1;
+}
+.esquerda:hover .description, .direita:hover .description {
+    transform: translateY(10px); 
+    transition: transform 0.5s; 
 }
