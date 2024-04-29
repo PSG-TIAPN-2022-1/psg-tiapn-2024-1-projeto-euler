@@ -13,3 +13,7 @@
 .direita{
     background-color: #5F5D9C;
 }
+.row h1{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+}
