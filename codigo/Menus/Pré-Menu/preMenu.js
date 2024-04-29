@@ -1,7 +1,7 @@
 function clicadoAroma(){
-    window.location.href = "/codigo/Menus/MenuArtes/menuArtes.html?int=1"
+    window.location.href = "/codigo/Menus/MenuAroma/menuAroma.html?int=1"
 }
 function clicadoArtes(){
     
-    window.location.href = "/codigo/Menus/MenuArtes/menuArtes.html?int=0"
+    window.location.href = "/codigo/Menus/MenuAroma/menuAroma.html?int=0"
 }
