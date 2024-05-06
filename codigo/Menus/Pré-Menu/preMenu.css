@@ -67,3 +67,8 @@
         font-size: 2.5rem;
     }
 }
+@media (max-width: 1568px){
+    .description{
+        font-size: 1rem;
+    }
+}   
