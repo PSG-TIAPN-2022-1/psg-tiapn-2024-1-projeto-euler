@@ -57,4 +57,47 @@ body {
     background-position: center center;
     background-size:100%;
 }
+
+
+
+/* COMEÇO DO FOOTER*/ 
+footer{
+    background-color: cadetblue;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    text-align: center
+}
+
+.redes {
+    display: grid;
+    grid-template-columns: repeat(2, 0.3fr);
+    justify-content: center;
+}
+
+.redes>div {
+    padding: 10%;
+}
+
+.contato>div{
+    padding: 10%;
+}
+
+.contato{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+}
+
+.box {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+#logoF{
+    width: 60%;
+}
   
