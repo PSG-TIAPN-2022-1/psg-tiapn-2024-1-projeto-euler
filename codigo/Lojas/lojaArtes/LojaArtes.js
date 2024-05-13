@@ -14,15 +14,16 @@ function criarFooter() {
     const box3=document.createElement('div');
     box3.classList.add('box','box3');
 
-
+    
     /*AGORA SERÁ A CRIAÇÃO DE CADA UM DOS ELEMENTOS PRESENTES NO FOOTER*/
     
     /*CRIAÇÃO DO BOX 1 */
     const logoF = document.createElement('img');
     logoF.src ="/codigo/assets/Footer/kelly logo trans-hori.png";
     logoF.alt = "";
-    logoF.id="logoF";
+    logoF.setAttribute("id","logoF")
     
+
     /*CRIAÇAO DO BOX2*/
 
     const h3RedesSociais = document.createElement('h3');
@@ -37,7 +38,8 @@ function criarFooter() {
     const imgInsta = document.createElement('img');
     imgInsta.src= "/codigo/assets/footer/instagram.svg";
     imgInsta.alt= "";
-    imgInsta.width = "50px";
+    
+    imgInsta.setAttribute("class","imgRedesSociais")
 
     const nestedInsta = document.createElement('div');
     nestedInsta.classList.add('neasted');
@@ -52,7 +54,8 @@ function criarFooter() {
     const imgFace = document.createElement('img');
     imgFace.src = "/codigo/assets/footer/facebook.svg";
     imgFace.alt= "";
-    imgFace.width = "50px";
+    
+    imgFace.setAttribute("class","imgRedesSociais");
 
     const nestedFace = document.createElement('div');
     nestedFace.classList.add('neasted');
@@ -62,12 +65,12 @@ function criarFooter() {
     face.appendChild(nestedFace);
 
     face.appendChild(insta);
-    face.appendChild(face);
+    
 
     /*CRIAÇÃO DO BOX3*/
     const h3Contato = document.createElement('h3');
     h3Contato.textContent = "Contato";
-
+    h3Contato.setAttribute("class", "Contato")
     const contato = document.createElement('div');
     contato.classList.add('contato');
 
@@ -80,12 +83,13 @@ function criarFooter() {
     const imgEmail = document.createElement('img');
     imgEmail.src = "/codigo/assets/footer/email.svg";
     imgEmail.alt = "";
-    imgEmail.width = "50px";
 
+    imgEmail.setAttribute("class","Contatos");
     const nestedEmail = document.createElement('div');
     nestedEmail.classList.add('neasted');
     nestedEmail.textContent = "KellyFonseca@gmail.com";
 
+    
     email.appendChild(h4Email);
     email.appendChild(imgEmail);
     email.appendChild(nestedEmail);
@@ -99,11 +103,14 @@ function criarFooter() {
     const imgTelefone = document.createElement('img');
     imgTelefone.src = "/codigo/assets/footer/zap.svg";
     imgTelefone.alt = "";
-    imgTelefone.width = "50px";
+
+    imgTelefone.setAttribute("class","Contatos");
 
     const nestedTelefone = document.createElement('div');
     nestedTelefone.classList.add('neasted');
     nestedTelefone.textContent="(31) 123123-13223";
+
+    
 
     telefone.appendChild(h4Telefone);
     telefone.appendChild(imgTelefone);
@@ -127,11 +134,14 @@ function criarFooter() {
     contato.appendChild(telefone);
     box3.appendChild(h3Contato);
     box3.appendChild(contato);
-    box3.appendChild(box3);
+    
+    const divFooter = document.getElementById('footer');
+    
+    wrapper.appendChild(box3);
 
     footer.appendChild(wrapper);
 
-    document.body.appendChild(footer);
+    divFooter.appendChild(footer);
 
 }
 criarFooter()

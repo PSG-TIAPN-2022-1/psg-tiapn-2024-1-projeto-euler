@@ -56,40 +56,36 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size:100%;
+
 }
 
 
 
-/* COMEÇO DO FOOTER*/ 
+/* COMEÇO DO FOOTER*/
 footer{
+    display: flex;
+    width: 100%;
+} 
+#footer{
+    position: fixed;
+    bottom: 0;
     background-color: cadetblue;
+    width:100% ;
+    
 }
 .wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    text-align: center
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .redes {
     display: grid;
     grid-template-columns: repeat(2, 0.3fr);
-    justify-content: center;
+    
 }
 
-.redes>div {
-    padding: 10%;
-}
-
-.contato>div{
-    padding: 10%;
-}
-
-.contato{
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    justify-content: center;
-}
 
 .box {
     text-align: center;
@@ -98,6 +94,25 @@ footer{
 }
 
 #logoF{
-    width: 60%;
+    width:16rem ;
 }
-  
+ .imgRedesSociais{
+   width:4rem; 
+ }
+ .Contatos{
+    padding-left: 1rem;
+    width: 4rem;
+ }
+ #email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min-content;
+ }
+ .contato{
+    display: flex;
+    justify-content: center;
+ }
+#tel{
+    margin-left: 1rem;
+}
