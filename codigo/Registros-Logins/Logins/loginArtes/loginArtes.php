@@ -17,7 +17,7 @@
                 <input class="box" type="email" placeholder="Email">
                 <input class="box" type="password" placeholder="Senha">
                 <a href="#">Esqueceu a senha?</a>
-                <button class="btn">Enviar</button>
+                <button type="submit" class="btn">Enviar</button>
                 <p>Novo neste site? <a href="#">Registre-se</a></p>
             </form>
         </div>
