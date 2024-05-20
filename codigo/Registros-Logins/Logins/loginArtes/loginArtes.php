@@ -1,3 +1,7 @@
+<?php
+    include("conexao.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,8 +18,8 @@
         <div class="card">
             <form action="post">
                 <h1>Entrar</h1>
-                <input class="box" type="email" placeholder="Email">
-                <input class="box" type="password" placeholder="Senha">
+                <input class="box" type="email" placeholder="Email" name="email">
+                <input class="box" type="password" placeholder="Senha" name="senha">
                 <a href="#">Esqueceu a senha?</a>
                 <button type="submit" class="btn">Enviar</button>
                 <p>Novo neste site? <a href="#">Registre-se</a></p>
