@@ -12,7 +12,7 @@
     <img class="img-logo" src="img/bf1abe_59bee449564d487187175909f042c960~mv2.webp">   
     <div class="page">
         <div class="card">
-            <form action="push">
+            <form action="post">
                 <h1>Entrar</h1>
                 <input class="box" type="email" placeholder="Email">
                 <input class="box" type="password" placeholder="Senha">
