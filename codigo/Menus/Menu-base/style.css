@@ -100,6 +100,9 @@ li{
     display: grid;
     color: #5F5D9C;
 }
+.title p{
+    font-size: 1.5rem;
+}
 .images{
     display: flex;
     flex-direction: row;
@@ -121,8 +124,8 @@ li{
 .troca button{
     font-size: 1.5rem;
     border-radius: 30px;
-    background-color: #5F5D9C;
-    color: white;
+    background-color: white;
+    color: #5F5D9C;;
     cursor: pointer;
     width: 20%;
     height: 30%;
