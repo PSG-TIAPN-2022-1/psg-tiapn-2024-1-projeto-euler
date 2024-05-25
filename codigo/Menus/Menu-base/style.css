@@ -100,8 +100,11 @@ li{
     display: grid;
     color: #5F5D9C;
 }
+.title h1{
+    font-size: 3rem;
+}
 .title p{
-    font-size: 1.5rem;
+    font-size: 2.0rem;
 }
 .troca{
     height: 100%;
