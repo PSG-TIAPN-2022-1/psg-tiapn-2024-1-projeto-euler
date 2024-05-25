@@ -123,4 +123,7 @@ li{
     width: 20%;
     height: 30%;
 }
+.gallery{
+    cursor: pointer;
+}
 
