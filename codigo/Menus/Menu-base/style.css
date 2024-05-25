@@ -103,18 +103,6 @@ li{
 .title p{
     font-size: 1.5rem;
 }
-.images{
-    border: 3px solid red;
-    display: flex;
-    flex-direction: row;
-    width: 95vw;
-}
-.images img{
-    flex: 1;
-    width: 30%;
-    object-fit: cover;
-    border: 3px solid black;
-}
 .troca{
     height: 100%;
     width: 100%;
@@ -132,3 +120,4 @@ li{
     width: 20%;
     height: 30%;
 }
+
