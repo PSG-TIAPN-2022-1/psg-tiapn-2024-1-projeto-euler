@@ -109,9 +109,8 @@ li{
     flex-direction: row;
 }
 .images img{
-    height: 20rem;
-    width: 20rem;
-    margin: 15px;
+    flex: 1;
+    object-fit: cover;
     border: 3px solid black;
 }
 .troca{
