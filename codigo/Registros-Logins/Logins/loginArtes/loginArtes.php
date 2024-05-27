@@ -44,6 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,20 +53,61 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
     <title>Login Arte</title>
 </head>
+
 <body>
-    <img class="img-logo" src="img/bf1abe_59bee449564d487187175909f042c960~mv2.webp">   
+    <img class="img-logo" src="img/bf1abe_59bee449564d487187175909f042c960~mv2.webp">
     <div class="page">
         <div class="card">
-            <form action="post">
-                <h1>Entrar</h1>
+            <h1>Entrar</h1>
+            <form action="loginArtes.php" method="post">
                 <input class="box" type="email" placeholder="Email" name="email">
-                <input class="box" type="password" placeholder="Senha" name="senha">
+                <div id="inpSen">
+                    <input class="box" id="sen" type="password" placeholder="Senha" name="senha">
+                    <input type="checkbox" onclick="visu()">
+                </div>
                 <a href="#">Esqueceu a senha?</a>
                 <button type="submit" class="btn">Enviar</button>
-                <p>Novo neste site? <a href="#">Registre-se</a></p>
             </form>
+            <p id="regOpn">Novo neste site? <a
+                    href="/projetoEuler/codigo/Menus/MenuArtes/MenuArtes.html">Registre-se</a></p>
+            <p id="aviso"><?php echo $aviso ?></p>
         </div>
     </div>
 
 </body>
+
 </html>
+
+<script>
+    $inputSen = $("#sen");
+
+    function visu() {
+        if ($("#sen").prop("type", "password" : true)) {
+            $inputSen.prop("type", "text");
+        }
+        else {
+            $inputSen.prop("type", "passwoard");
+        }
+    }
+</script>
+
+<style>
+    #inpSen {
+        display: flex;
+    }
+
+    #sen{
+        width: 80%;
+    }
+
+    #regOpn {
+        text-align: center;
+    }
+
+    #aviso {
+        text-align: center;
+        color: red;
+        background-color: antiquewhite;
+        font-family: 'Times New Roman', Times, serif;
+    }
+</style>
