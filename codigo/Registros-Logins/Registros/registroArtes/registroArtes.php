@@ -41,8 +41,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body id="jquery">
-    <script src="https://code.jquery.com/jquery-3.7.0.js"
-        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </body>
 
 <body>
@@ -55,13 +55,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <input class="box" type="email" placeholder="Email" name="email">
                 <div id="inpSen">
                     <input class="box" id="sen" type="password" placeholder="Senha" name="senha">
-                    <input type="checkbox" onclick="visu()">
+                    <input id="cb" type="checkbox">
                 </div>
                 <!-- <input class="box" type="password" placeholder="Confirmar senha"> -->
                 <div id="emailHelp" class="form-text">Não compartilharemos seu email com ninguém!</div>
                 <button class="btn" type="submit">Enviar</button>
             </form>
-
             <p id="aviso"><?php echo $aviso ?></p>
         </div>
     </div>
@@ -70,25 +69,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </html>
 
 <script>
-    $inputSen = $("#sen");
-
-    function visu() {
-        if ($("#sen").prop("type", "password" : true)) {
-            $inputSen.prop("type", "text");
+    $('#cb').on("change", function () {
+        if ('#cb').is(":checked"){
+            $('#sen').prop('type', 'text');
         }
-        else {
-            $inputSen.prop("type", "passwoard");
+        else{
+            $('#sen').prop("type", "password");
         }
-    }
+    });
 </script>
 
 <style>
-
     #inpSen {
         display: flex;
     }
 
-    #sen{
+    #sen {
         width: 80%;
     }
 
