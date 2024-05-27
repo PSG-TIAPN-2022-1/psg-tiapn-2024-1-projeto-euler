@@ -63,6 +63,7 @@ h1{
     cursor: pointer;
     color:#FFFFFF;    
 }
+
 @media(max-width: 660px){
     .card{
         width: 80%;

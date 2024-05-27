@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $sql_code = "INSERT INTO user (nome, email, senha) VALUES ('$nome','$email','$senha')";
         $sql_query = $mysqli->query($sql_code) or die($aviso = "Falha na execução do código SQL" . $mysqli->error);
 
-        header("Location: /projetoEuler/codigo/menus/menuArtes.html");
+        header("Location: /projetoEuler/codigo/Menus/MenuArtes/MenuArtes.html");
     } else {
         $aviso = "Falha ao registrar! E-mail já está sendo utilizado";
     }
@@ -53,12 +53,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <h1>Criar conta</h1>
                 <input class="box" type="text" placeholder="Nome" name="nome">
                 <input class="box" type="email" placeholder="Email" name="email">
-                <input class="box" id="sen" type="password" placeholder="Senha" name="senha">
-                <input type="checkbox" onclick="visu()">
+                <div id="inpSen">
+                    <input class="box" id="sen" type="password" placeholder="Senha" name="senha">
+                    <input type="checkbox" onclick="visu()">
+                </div>
                 <!-- <input class="box" type="password" placeholder="Confirmar senha"> -->
                 <div id="emailHelp" class="form-text">Não compartilharemos seu email com ninguém!</div>
                 <button class="btn" type="submit">Enviar</button>
             </form>
+
+            <p id="aviso"><?php echo $aviso ?></p>
         </div>
     </div>
 </body>
@@ -69,13 +73,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $inputSen = $("#sen");
 
     function visu() {
-        if ($("#sen").prop("type", "password" : true)){
+        if ($("#sen").prop("type", "password" : true)) {
             $inputSen.prop("type", "text");
         }
         else {
             $inputSen.prop("type", "passwoard");
         }
     }
-
-
 </script>
+
+<style>
+
+    #inpSen {
+        display: flex;
+    }
+
+    #sen{
+        width: 80%;
+    }
+
+    .form-text {
+        text-align: center;
+    }
+
+    #aviso {
+        text-align: center;
+        color: red;
+        background-color: antiquewhite;
+    }
+</style>
