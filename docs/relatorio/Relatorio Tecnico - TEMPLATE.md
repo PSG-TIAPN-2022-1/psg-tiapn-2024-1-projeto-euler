@@ -202,11 +202,18 @@ Nesse quesito o projeto busca como referência as melhores estrtégias de versio
 Os commits seralizados serão realizados com nomes descritivos quanto a suas reespectivas operações, de forma a destacar qual versão do cídigo se trata. Nas demais branch que não sejam a "main" é escrito todas mudanças feitas na versão, assim permitindo a caominicação direta do que foi feito e do que precisa ser feito no próprio arquivo.
 
 # Modelagem do Processo de Negócio
-
+> A modelagem dos processos de negócio foi uma etapa crucial na fase de projeto da solução. Para criar os diagramas, utilizamos a ferramenta Camunda Modeler, a partir da qual foram gerados os seguintes diagramas BPMN:
 ## Análise da Situação Atual
-
-## Descrição dos Processos Aprimorados
 ![AS-IS](images/modelagemAS-IS.png)
+## Descrição dos Processos Aprimorados
+![TO-BE](images/modelagemTO-BE.png)
+# Modelagem de Dados
+> Na etapa seguinte, realizamos a Modelagem de Dados utilizando as ferramentas Draw.io e BrModelo, resultando na criação dos modelos Conceitual e Lógico.
+## Modelo Conceitual
+![Conceitual](images/DER.jpg)
+## Modelo Lógico
+![logico](images/modeloRelacional.jpg)
+ 
 
 # Projeto da Solução
 
