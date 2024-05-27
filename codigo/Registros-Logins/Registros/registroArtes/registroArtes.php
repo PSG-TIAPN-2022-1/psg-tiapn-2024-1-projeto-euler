@@ -1,5 +1,36 @@
+<?php
+include ('conexao.php');
+
+$aviso = "";
+
+//validar os campos: tamaho da senha e nome
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+
+    $sql_code = "SELECT * FROM user WHERE email = '$email'";
+    $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL" . $mysqli->error);
+
+    $quantidade = $sql_query->num_rows;
+
+    if ($quantidade == 0) {
+
+        $sql_code = "INSERT INTO user (nome, email, senha) VALUES ('$nome','$email','$senha')";
+        $sql_query = $mysqli->query($sql_code) or die($aviso = "Falha na execução do código SQL" . $mysqli->error);
+
+        header("Location: /projetoEuler/codigo/menus/menuArtes.html");
+    } else {
+        $aviso = "Falha ao registrar! E-mail já está sendo utilizado";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +39,43 @@
     <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
     <title>Cadastro Arte</title>
 </head>
+
+<body id="jquery">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</body>
+
 <body>
     <img class="img-logo" src="img/bf1abe_59bee449564d487187175909f042c960~mv2.webp">
     <div class="page">
         <div class="card">
-            <form>
+            <form action="registroArtes.php" method="post">
                 <h1>Criar conta</h1>
-                <input class="box" type="email" placeholder="Email">
-                <input class="box" type="password" placeholder="Senha">
-                <input class="box" type="password" placeholder="Confirmar senha">
-                <button class="btn">Enviar</button>
+                <input class="box" type="text" placeholder="Nome" name="nome">
+                <input class="box" type="email" placeholder="Email" name="email">
+                <input class="box" id="sen" type="password" placeholder="Senha" name="senha">
+                <input type="checkbox" onclick="visu()">
+                <!-- <input class="box" type="password" placeholder="Confirmar senha"> -->
+                <div id="emailHelp" class="form-text">Não compartilharemos seu email com ninguém!</div>
+                <button class="btn" type="submit">Enviar</button>
             </form>
         </div>
     </div>
 </body>
+
 </html>
+
+<script>
+    $inputSen = $("#sen");
+
+    function visu() {
+        if ($("#sen").prop("type", "password" : true)){
+            $inputSen.prop("type", "text");
+        }
+        else {
+            $inputSen.prop("type", "passwoard");
+        }
+    }
+
+
+</script>
