@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <input class="box" type="email" placeholder="Email" name="email">
                 <div id="inpSen">
                     <input class="box" id="sen" type="password" placeholder="Senha" name="senha">
-                    <input type="checkbox" onclick="visu()">
+                    <input type="checkbox" onclick="view()">
                 </div>
                 <a href="#">Esqueceu a senha?</a>
                 <button type="submit" class="btn">Enviar</button>
@@ -79,16 +79,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </html>
 
 <script>
-    $inputSen = $("#sen");
-
-    function visu() {
-        if ($("#sen").prop("type", "password" : true)) {
-            $inputSen.prop("type", "text");
+    function view() {
+        if ($('#sen').prop('type') == 'password') {
+            $('#sen').prop('type', 'text');
         }
         else {
-            $inputSen.prop("type", "passwoard");
+            $('#sen').prop('type', 'password');
         }
-    }
+    };
 </script>
 
 <style>

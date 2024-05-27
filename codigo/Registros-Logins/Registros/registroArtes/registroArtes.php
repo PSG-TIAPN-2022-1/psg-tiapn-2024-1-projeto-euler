@@ -55,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <input class="box" type="email" placeholder="Email" name="email">
                 <div id="inpSen">
                     <input class="box" id="sen" type="password" placeholder="Senha" name="senha">
-                    <input id="cb" type="checkbox">
+                    <input type="checkbox" onclick="view()">
                 </div>
                 <!-- <input class="box" type="password" placeholder="Confirmar senha"> -->
                 <div id="emailHelp" class="form-text">Não compartilharemos seu email com ninguém!</div>
@@ -69,14 +69,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </html>
 
 <script>
-    $('#cb').on("change", function () {
-        if ('#cb').is(":checked"){
+    function view() {
+        if ($('#sen').prop('type') == 'password') {
             $('#sen').prop('type', 'text');
         }
-        else{
-            $('#sen').prop("type", "password");
+        else {
+            $('#sen').prop('type', 'password');
         }
-    });
+    };
 </script>
 
 <style>
