@@ -126,4 +126,54 @@ li{
 .gallery{
     cursor: pointer;
 }
+@media screen and (max-width: 992px) {
+    .gallery img{
+        width: 20%;
+        margin-left: 20px;
+    }
+    .troca button{
+        font-size: 0.5rem;
+        height: 40%;
+    }
+    li{
+        font-size: 1rem;
+    }
+    #logo{
+        width: 30%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .gallery img{
+        width: 20%;
+        margin-left: 20px;
+    }
+    .troca button{
+        font-size: 0.5rem;
+        height: 40%;
+    }
+    li{
+        font-size: 1rem;
+    }
+    #logo{
+        width: 30%;
+    }
+    h1{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    #bt{
+        font-size: 1rem;
+    }
+    .title h1{
+        font-size: 1rem;
+    }
+    .title p{
+        font-size: 0.8rem;
+    }
+    .troca button{
+        width: 30%;
+    }
+  }
 
