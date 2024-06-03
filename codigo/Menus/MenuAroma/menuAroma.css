@@ -15,15 +15,13 @@ a{
     box-shadow: 0px 5px 20px gray;
     height: 10vh;
 }
-#current{
-    color: gray;
-}
+
 #logo {
     height: 90%;
 }
 
 #logoProfile {
-    width: 30%;
+    width: 50%;
     height: 60%;
     margin-top: 15%;
 }
@@ -46,7 +44,6 @@ li{
     display: block;
     text-align: center;
     text-decoration: none; 
-    font-size: 1.1rem;
 }
 .header {
     font-style: normal;
@@ -59,9 +56,7 @@ li{
 
 
 .grid {  
-    background-image: url('/codigo/assets/planta3-1024x522.png');
-    background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
     background-size: 70%;
     background-position: 110% 10%;
     grid-template-areas:
@@ -122,9 +117,11 @@ li{
 }
 .troca {
     display: flex;
-    height: 25%;
+    height: 100%;
     width: 100%; 
     align-items: center;
+    background: linear-gradient(to right, #5F5D9C 10%, transparent 30%);
+    border-top-left-radius: 80%;   
 }
 
 .troca button {
@@ -136,7 +133,7 @@ li{
     width: 15%;
     height: 23%;
     margin-top: 50px;
-    margin-left: 160px;
+    margin-left: 160px;  
 }
 .gallery{
     cursor: pointer;
@@ -156,15 +153,10 @@ li{
     #logo{
         width: 30%;
     }
-  }
-  @media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 768px) {
     .gallery img{
         width: 20%;
-        margin-left: 20px;
-    }
-    .troca button{
-        font-size: 0.7rem;
-        height: 20%;
         margin-left: 20px;
     }
     li{
@@ -174,25 +166,19 @@ li{
         width: 30%;
     }
     h1{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     p{
         font-size: 1rem;
     }
-    #bt{
-        font-size: 1rem;
-    }
     .title h1{
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .title p{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
-    .troca button{
-        width: 30%;
-    }
-  }
-  @media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 1024px) {
     #bt{
         font-size: 1rem;
         width: 50%;
@@ -223,8 +209,8 @@ li{
         margin-top: 10px;
         margin-bottom: 50px;
     }
-  }
-  @media screen and (max-width: 1440px){
+}
+@media screen and (max-width: 1440px){
     .grid	{
         background-size: 70%;
         background-position: 115% 10%;
@@ -250,13 +236,15 @@ li{
     }
     .footer{
         justify-content: flex-end;
-        padding-top: 10vh;
-        padding-bottom: 10vh;
     }
     .troca button{
         font-size: 1rem;
         height: 40%;
         margin-left: 20px;
     }
-  }
-  
+    .troca{
+        background: linear-gradient(to right, #5F5D9C 10%, transparent 30%);
+        border-top-left-radius: 60%;
+    }
+}
+
