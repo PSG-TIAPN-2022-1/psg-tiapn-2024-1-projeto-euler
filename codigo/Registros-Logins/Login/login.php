@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['nome'] = $usuario['nome'];
             $_SESSION['email'] = $usuario['email'];
 
-            header("Location: /projetoEuler/codigo/Menus/MenuArtes/MenuArtes.html");
+            header("Location: /projetoEuler/codigo/Menus/Menu-base/index.html");
         } else {
             $aviso = "Falha ao logar! E-mail ou senha incorretos";
         }
@@ -48,18 +48,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="loginArtes.css">
+    <link rel="stylesheet" href="login.css">
     <link href='https://fonts.googleapis.com/css?family=Italianno' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
     <title>Login Arte</title>
 </head>
 
 <body>
-    <img class="img-logo" src="img/bf1abe_59bee449564d487187175909f042c960~mv2.webp">
+    <img class="img-logo" src="">
     <div class="page">
         <div class="card">
             <h1>Entrar</h1>
-            <form action="loginArtes.php" method="post">
+            <form action="login.php" method="post">
                 <input class="box" type="email" placeholder="Email" name="email">
                 <div id="inpSen">
                     <input class="box" id="sen" type="password" placeholder="Senha" name="senha">
@@ -69,7 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <button type="submit" class="btn">Enviar</button>
             </form>
             <p id="regOpn">Novo neste site? <a
-                    href="/projetoEuler/codigo/Menus/MenuArtes/MenuArtes.html">Registre-se</a></p>
+                    href="/projetoEuler/codigo/Registros-Logins/Registro/Registro.php">Registre-se</a></p>
             <p id="aviso"><?php echo $aviso ?></p>
         </div>
     </div>
@@ -87,6 +87,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $('#sen').prop('type', 'password');
         }
     };
+
+    window.onload = function () {
+        let tipo = sessionStorage.getItem("tipo");
+        if(tipo == true)
+            $('.img-logo').prop("src", "/ProjetoEuler/codigo/assets/logoAroma.jpg");
+        else
+            $('.img-logo').prop("src", "/ProjetoEuler/codigo/assets/kellyLogo-vertical.png");
+        
+    } 
 </script>
 
 <style>

@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $sql_code = "INSERT INTO user (nome, email, senha) VALUES ('$nome','$email','$senha')";
         $sql_query = $mysqli->query($sql_code) or die($aviso = "Falha na execução do código SQL" . $mysqli->error);
 
-        header("Location: /projetoEuler/codigo/Menus/MenuArtes/MenuArtes.html");
+        header("Location: /projetoEuler/codigo/Menus/Menu-base/index.html");
     } else {
         $aviso = "Falha ao registrar! E-mail já está sendo utilizado";
     }
@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="registroArtes.css">
+    <link rel="stylesheet" href="registro.css">
     <link href='https://fonts.googleapis.com/css?family=Italianno' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
     <title>Cadastro Arte</title>
@@ -46,15 +46,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </body>
 
 <body>
-    <img class="img-logo" src="img/bf1abe_59bee449564d487187175909f042c960~mv2.webp">
+    <img class="img-logo" src="">
     <div class="page">
         <div class="card">
-            <form action="registroArtes.php" method="post">
+            <form action="registro.php" method="post">
                 <h1>Criar conta</h1>
-                <input class="box" type="text" placeholder="Nome" name="nome">
-                <input class="box" type="email" placeholder="Email" name="email">
+                <input class="box" type="text" placeholder="Nome" name="nome" required>
+                <input class="box" type="email" placeholder="Email" name="email" required>
                 <div id="inpSen">
-                    <input class="box" id="sen" type="password" placeholder="Senha" name="senha">
+                    <input class="box" id="sen" type="password" placeholder="Senha" name="senha" required>
                     <input type="checkbox" onclick="view()">
                 </div>
                 <!-- <input class="box" type="password" placeholder="Confirmar senha"> -->
@@ -70,13 +70,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <script>
     function view() {
-        if ($('#sen').prop('type') == 'password') {
+        if ($('#sen').prop('type') == 'password')
             $('#sen').prop('type', 'text');
-        }
-        else {
+        else 
             $('#sen').prop('type', 'password');
-        }
     };
+
+    window.onload = function () {
+        let tipo = sessionStorage.getItem("tipo");
+        if(tipo == true)
+            $('.img-logo').prop("src", "/ProjetoEuler/codigo/assets/logoAroma.jpg");
+        else
+            $('.img-logo').prop("src", "/ProjetoEuler/codigo/assets/kellyLogo-vertical.png");
+        
+    } 
 </script>
 
 <style>
