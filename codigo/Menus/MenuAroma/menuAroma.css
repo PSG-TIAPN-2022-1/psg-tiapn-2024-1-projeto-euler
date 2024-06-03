@@ -56,7 +56,9 @@ li{
 
 
 .grid {  
-    height: 100%;
+    background-image: url('/codigo/assets/planta3-1024x522.png');
+    background-repeat: no-repeat;
+    height: 100vh;
     background-size: 70%;
     background-position: 110% 10%;
     grid-template-areas:
