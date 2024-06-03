@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="login.css">
     <link href='https://fonts.googleapis.com/css?family=Italianno' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
-    <title>Login Arte</title>
+    <title>Login</title>
 </head>
 
 <body>

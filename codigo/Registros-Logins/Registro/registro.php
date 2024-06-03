@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="registro.css">
     <link href='https://fonts.googleapis.com/css?family=Italianno' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
-    <title>Cadastro Arte</title>
+    <title>Cadastro</title>
 </head>
 
 <body id="jquery">
@@ -65,6 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </div>
 </body>
+<img src="">
 
 </html>
 
@@ -78,10 +79,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     window.onload = function () {
         let tipo = sessionStorage.getItem("tipo");
-        if(tipo == true)
-            $('.img-logo').prop("src", "/ProjetoEuler/codigo/assets/logoAroma.jpg");
+        tipo = true;
+        if(tipo == true){
+            //$('.img-logo').prop("src", "/ProjetoEuler/codigo/assets/logoAroma.jpg");
+            $('body').css('background-image','url(https://www.wellife.com.br/media/mageplaza/blog/post/a/r/aromaterapia.jpg)');
+        }
         else
-            $('.img-logo').prop("src", "/ProjetoEuler/codigo/assets/kellyLogo-vertical.png");
+            //$('.img-logo').prop("src", "/ProjetoEuler/codigo/assets/kellyLogo-vertical.png");
         
     } 
 </script>
