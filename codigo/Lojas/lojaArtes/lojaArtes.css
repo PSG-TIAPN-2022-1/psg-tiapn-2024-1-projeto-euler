@@ -1,64 +1,75 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    background-color: #FFFFFF;
-    box-shadow: 0px 5px 20px gray;
-    width: 103%;
-    transform: translate(-2%, -7%);
-}
 
-#logo {
-    margin: 1% 5%;
-}
-
-#logoProfile {
-    margin-left: 2%;
-}
-
-#logoProfile:hover{
-    opacity: 70%;
-    cursor: pointer;
-}
-
-nav {
-    font-style: normal;
-    color: black;
-    font-size: 200%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 2%;
-
-}
-
-.navItem {
-    text-decoration: none;
-    margin: 0% 1%;
-}
-
-.navItem:hover{
-    opacity: 70%;
-}
-
-#titulo1{
-    
-    justify-content: center;
-    display:flex;
-    font-family: 'Italianno', sans-serif;
-    
-    
-}
-#titulo2{
-    justify-content: center;
-    display: flex;
-    font-family: 'Lexend Exa',sans-serif;
-}
 body {
     background-image: url('../../assets/ImagemFundo.jpeg');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size:100%;
+    background-size:95rem;
 
 }
+#titulo1{
+    display: flex;
+    justify-content: center;
 
+}
+#titulo2{
+display: flex;
+justify-content: center;
+}
+/*COMEÇO DA NAV*/
+
+
+    a {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #FFFFFF;
+        box-shadow: 0px 5px 20px gray;
+        font-style: normal;
+        color: black;
+        font-size: 100%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        align-items: center;
+        opacity: 100%;
+        width: 100%;
+    }
+
+    #logo {
+        height: 90%;
+    }
+
+    #logoProfile {
+        width: 50%;
+        height: 60%;
+        margin-top: 15%;
+    }
+
+    #logoProfile:hover {
+        opacity: 70%;
+        cursor: pointer;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    li {
+        list-style-type: none;
+        margin: 1rem;
+
+    }
+
+    .navItem a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+    }
+
+/*FIM DA NAV BAR
 
 
 /* COMEÇO DO FOOTER*/
@@ -115,4 +126,76 @@ footer{
  }
 #tel{
     margin-left: 1rem;
+}
+
+
+
+
+
+@media screen and (max-width: 768px)
+{
+     /* COMEÇO DO FOOTER*/
+footer{
+    display: flex;
+    width: 100%;
+} 
+#footer{
+    position: fixed;
+    bottom: 0;
+    background-color: cadetblue;
+    width:100% ;
+    
+}
+.wrapper {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.redes {
+    display: grid;
+    grid-template-columns: repeat(2, 0.3fr);
+    
+}
+
+
+.box {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+#logoF{
+    width:10rem ;
+}
+ .imgRedesSociais{
+   width:1rem; 
+ }
+ .Contatos{
+    padding-left: 1rem;
+    width: 1rem;
+ }
+ #email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min-content;
+ }
+ .contato{
+    display: flex;
+    justify-content: center;
+ }
+#tel{
+    margin-left: 0.1rem;
+}
+body {
+    background-image: url('../../assets/ImagemFundo.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:200%;
+
+}
+
+
 }
