@@ -182,6 +182,9 @@ li{
     .title p{
         font-size: 1rem;
     }
+    #logoProfile{
+        width: 70%;    
+    }
 }
 @media screen and (max-width: 1024px) {
     #bt{
