@@ -6,8 +6,16 @@ function clicado(x){
         case 2:
             window.location.href = "/codigo/Sobres/sobreArtes/sobreArtes.html"
             break;
+        case 3:
+            window.location.href = "/codigo/Menus/MenuAroma/menuAroma.html"
         default:
             break;
 
    } 
+}
+function scroll() {
+    window.scrollBy({
+        top: 1200, 
+        behavior: 'smooth' 
+    });
 }
