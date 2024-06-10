@@ -94,7 +94,7 @@ li{
 }
 .footer{
     background-color: #ACC6AA;
-    height: 100vh;
+    height: 120vh;
     display:grid;
     grid-template-areas:
         'title'
@@ -125,17 +125,20 @@ li{
     background-repeat: no-repeat;
 }
 .troca button{
+    margin: 30px;
     font-size: 1.2rem;
     border-radius: 30px;
     background-color: white;
     color: #5F5D9C;;
     cursor: pointer;
-    width: 20%;
-    height: 30%;
+    width: 300px;
+    height: 80px;
 }
 .gallery{
     cursor: pointer;
+    margin-left: 30px;
 }
+
 @media screen and (max-width: 992px) {
     .gallery img{
         width: 20%;
@@ -161,29 +164,42 @@ li{
         font-size: 0.5rem;
         height: 40%;
     }
+    .navItem a{
+        font-size: 0.6rem;
+    }
     li{
-        font-size: 1rem;
+        font-size: 0.5rem;
     }
     #logo{
-        width: 30%;
+        width: 40%;
+        height: 40%;
     }
     h1{
-        font-size: 1rem;
-    }
-    p{
-        font-size: 1rem;
+        font-size: 2rem;
     }
     #bt{
         font-size: 1rem;
+        width: 50%;
+        height: 15%;
+    }
+    .title h1, p{
+        text-align: 0;
     }
     .title h1{
         font-size: 1rem;
     }
-    .title p{
+    .center p{
         font-size: 0.8rem;
+        width: 90%;
+    }
+    .title p{
+        font-size: 1rem;
+        width: 90%;
     }
     .troca button{
-        width: 30%;
-    }
+        height: 50px;
+        width: 150px;
+        font-size: 0.8rem;
+    }    
   }
 
