@@ -186,9 +186,14 @@
             });
         });
 
-        if ($(window).width() < 1200) {
-            $('#logo').prop("src", "img/kellyLogo-vertical.png");
-        }
+        window.setInterval(function () {
+            if($(window).width() < 1200) {
+                $('#logo').prop("src", "img/kellyLogo-vertical-trans.png");
+            }
+            else {
+                $('#logo').prop("src", "img/kellyLogo.png");
+            }
+        },1)
     </script>
 </body>
 
