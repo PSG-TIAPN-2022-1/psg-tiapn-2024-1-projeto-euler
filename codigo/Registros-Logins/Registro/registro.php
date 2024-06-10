@@ -73,20 +73,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     function view() {
         if ($('#sen').prop('type') == 'password')
             $('#sen').prop('type', 'text');
-        else 
+        else
             $('#sen').prop('type', 'password');
     };
 
     window.onload = function () {
         let tipo = sessionStorage.getItem("tipo");
-        tipo = true;
-        if(tipo == true){
-            //$('.img-logo').prop("src", "/ProjetoEuler/codigo/assets/logoAroma.jpg");
-            $('body').css('background-image','url(https://www.wellife.com.br/media/mageplaza/blog/post/a/r/aromaterapia.jpg)');
+        if (tipo == null)
+            tipo = true;
+        if (tipo == true) {
+            $('.img-logo').prop("src", "img/logoAroma.jpg");
+            //$('body').css('background-image','url(https://www.wellife.com.br/media/mageplaza/blog/post/a/r/aromaterapia.jpg)');
         }
         else
-            //$('.img-logo').prop("src", "/ProjetoEuler/codigo/assets/kellyLogo-vertical.png");
-        
+            $('.img-logo').prop("src", "img/kellyLogo.png");
     } 
 </script>
 
