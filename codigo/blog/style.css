@@ -1,0 +1,158 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.header img#logo {
+    margin-bottom: 10px;
+}
+
+.header .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header .navbar .navItem {
+    margin: 0 15px;
+}
+
+.header .navbar .navItem a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header .navbar .navItem a:hover {
+    color: #007bff;
+}
+
+.header .navbar #logoProfile {
+    margin-left: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.posts {
+    width: 70%;
+}
+
+.post {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+.comment-section {
+    margin-top: 20px;
+}
+
+.comment-section textarea {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+}
+
+.comment-section button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-section button:hover {
+    background-color: #0056b3;
+}
+
+.comment {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+.comment p {
+    margin: 0;
+}
+
+.comment .comment-date {
+    font-size: 0.8em;
+    color: #6c757d;
+}
+
+.comment .delete-button {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.comment .delete-button:hover {
+    background-color: #c82333;
+}
+
+.barra-lateral {
+    width: 25%;
+}
+
+.conteudo-lateral {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #e9ecef;
+    margin-top: 40px;
+}
+
+.footer .title h1 {
+    margin: 0;
+}
+
+.footer .gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .gallery img {
+    margin: 10px;
+    border-radius: 5px;
+}
