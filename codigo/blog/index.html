@@ -96,7 +96,6 @@
         </div>           
     </div>
     <script>
-        // Carregar comentários do localStorage
         function loadComments(postId, commentsId) {
             var comments = JSON.parse(localStorage.getItem(postId) || '[]');
             comments.forEach(comment => {
@@ -104,7 +103,6 @@
             });
         }
 
-        // Add comment element to the DOM
         function addCommentElement(commentsId, commentText, commentDate) {
             var comment = document.createElement("div");
             comment.className = "comment";
@@ -130,7 +128,6 @@
             document.getElementById(commentsId).appendChild(comment);
         }
 
-        // Add comment e salvar no localStorage
         function addComment(postId, inputId, commentsId) {
             var commentInput = document.getElementById(inputId);
             var commentText = commentInput.value;
@@ -147,7 +144,6 @@
             }
         }
 
-        // Save comments to localStorage
         function saveComments() {
             var posts = document.querySelectorAll('.post');
             posts.forEach(post => {
@@ -163,7 +159,6 @@
             });
         }
 
-        // Carregar comentários ao carregar a página
         document.addEventListener('DOMContentLoaded', function() {
             var posts = document.querySelectorAll('.post');
             posts.forEach(post => {
