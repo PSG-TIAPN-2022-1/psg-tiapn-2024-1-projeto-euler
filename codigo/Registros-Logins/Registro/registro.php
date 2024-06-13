@@ -83,7 +83,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             tipo = true;
         if (tipo == true) {
             $('.img-logo').prop("src", "img/logoAroma.jpg");
-            //$('body').css('background-image','url(https://www.wellife.com.br/media/mageplaza/blog/post/a/r/aromaterapia.jpg)');
         }
         else
             $('.img-logo').prop("src", "img/kellyLogo.png");
@@ -107,5 +106,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         text-align: center;
         color: red;
         background-color: antiquewhite;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(155, 184, 205, 1) 35%, rgba(95, 93, 156, 1) 100%);
     }
 </style>
