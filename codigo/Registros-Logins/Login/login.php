@@ -90,11 +90,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     window.onload = function () {
         let tipo = sessionStorage.getItem("tipo");
-        if(tipo == true)
-            $('.img-logo').prop("src", "/ProjetoEuler/codigo/assets/logoAroma.jpg");
+        if (tipo == null)
+            tipo = true;
+        if (tipo == true)
+            $('.img-logo').prop("src", "img/logoAroma.jpg");
         else
-            $('.img-logo').prop("src", "/ProjetoEuler/codigo/assets/kellyLogo-vertical.png");
-        
+            $('.img-logo').prop("src", "img/kellyLogo-vertical.png");
+
     } 
 </script>
 
@@ -103,7 +105,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         display: flex;
     }
 
-    #sen{
+    #sen {
         width: 80%;
     }
 

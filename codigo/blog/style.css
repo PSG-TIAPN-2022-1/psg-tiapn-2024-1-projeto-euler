@@ -16,15 +16,18 @@ body {
 }
 
 .header {
+    display: flex;
     background-color: #f8f9fa;
     padding: 10px 0;
     text-align: center;
     border-bottom: 2px solid #e9ecef;
+    justify-content: space-between;
+    font-size: 200%;
 }
 
 .header img#logo {
-    max-width: 100%;
-    height: auto;
+    width: 20%;
+    height: 100%;
     margin-bottom: 10px;
 }
 
@@ -49,7 +52,7 @@ body {
 }
 
 .header .navbar #logoProfile {
-    max-width: 10%;
+    width: 30%;
     height: auto;
     margin-left: 15px;
 }
@@ -178,6 +181,10 @@ body {
 }
 
 @media only screen and (max-width: 1200px) {
+    .header img#logo {
+        width: auto;
+    }
+    
     .container {
         flex-direction: column;
         padding: 10px;
@@ -198,10 +205,6 @@ body {
 
     .header .navbar {
         flex-direction: column;
-    }
-
-    .header .navbar #logoProfile {
-        max-width: 15%;
     }
 }
 

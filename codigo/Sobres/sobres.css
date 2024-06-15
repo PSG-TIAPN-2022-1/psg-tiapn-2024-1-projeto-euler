@@ -18,9 +18,6 @@ a{
 #current{
     color: gray;
 }
-#logo {
-    height: 90%;
-}
 
 #logoProfile {
     width: 30%;
@@ -80,6 +77,10 @@ li{
     width: 50%;
     padding: 1.5vh;
 }
+/* .contato{
+    display: flex;
+} */
+
 .contato h2{
     font-size: 1.5rem;
     font-weight: lighter;
