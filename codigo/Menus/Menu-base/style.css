@@ -154,6 +154,12 @@ li{
     #logo{
         width: 30%;
     }
+    #logoProfile{
+        height: 30%;
+    }
+    .troca button{
+        font-size: 1rem;
+    }
   }
   @media screen and (max-width: 768px) {
     .gallery img{
