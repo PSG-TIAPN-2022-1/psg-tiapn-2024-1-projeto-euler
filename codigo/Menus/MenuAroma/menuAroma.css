@@ -185,6 +185,9 @@ li{
     #logoProfile{
         width: 70%;    
     }
+    .troca button{
+        width: 20%;
+    }
 }
 @media screen and (max-width: 1024px) {
     #bt{
@@ -217,6 +220,10 @@ li{
         margin-top: 10px;
         margin-bottom: 50px;
     }
+    .troca button{
+        width: 25%;
+        margin-bottom: 10px;
+    }
 }
 @media screen and (max-width: 1440px){
     .grid	{
@@ -246,9 +253,11 @@ li{
         justify-content: flex-end;
     }
     .troca button{
+        width: 20%;
         font-size: 1rem;
-        height: 40%;
-        margin-left: 20px;
+        height: 45%;
+        margin-left: 25px;
+        margin-bottom: 10px;
     }
     .troca{
         background: linear-gradient(to right, #5F5D9C 10%, transparent 30%);
