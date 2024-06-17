@@ -7,11 +7,16 @@ $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQ
 
 $quantidade = $sql_query->num_rows;
 
-$postagem = $sql_query->fetch_assoc();
-
 $posts = "";
 
+$postsDest = "";
+
 for ($i = 0; $i < $quantidade; $i++) {
+    $sql_code = "SELECT * FROM post WHERE postID = '$i' + 1";
+    $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL" . $mysqli->error);
+
+    $postagem = $sql_query->fetch_assoc();
+
     $title = $postagem['postTitle'];
     $data = $postagem['postData'];
     $url = $postagem['imgUrl'];
@@ -19,20 +24,36 @@ for ($i = 0; $i < $quantidade; $i++) {
 
     $posts .=
         "<div class=\"post\">
-    <h2>$title</h2>
-    <span class=\"data-post\">$data</span>
-    <img src=\"$url\"
-        width=\"620px\">
-    <p>$desc</p>
-    <div class=\"comment-section\">
-        <h3>Comentários</h3>
-        <div id=\"comments-1\">
-            <!-- Comentários serão inseridos aqui -->
-        </div>
-        <textarea id=\"commentInput-1\" placeholder=\"Escreva um comentário...\"></textarea>
-        <button onclick=\"addComment('post-1', 'commentInput-1', 'comments-1')\">Enviar</button>
-    </div>
-</div>";
+            <h2>$title</h2>
+            <span class=\"data-post\">$data</span>
+            <img src=\"$url\"
+                width=\"620px\">
+            <p>$desc</p>
+            <div class=\"comment-section\">
+                <h3>Comentários</h3>
+                <div id=\"comments-1\">
+                    <!-- Comentários serão inseridos aqui -->
+                </div>
+                <textarea id=\"commentInput-1\" placeholder=\"Escreva um comentário...\"></textarea>
+                <button onclick=\"addComment('post-1', 'commentInput-1', 'comments-1')\">Enviar</button>
+            </div>
+        </div>";
+}
+
+for ($i = 0; $i < $quantidade; $i++) {
+    $sql_code = "SELECT * FROM post WHERE postID = '$i' + 1";
+    $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL" . $mysqli->error);
+
+    $postagem = $sql_query->fetch_assoc();
+
+    $title = $postagem['postTitle'];
+    $desc = $postagem['postDesc'];
+
+    $postsDest .=
+        "<div class=\"post-destaque\">
+            <h4>$title</h4>
+            <p>$desc</p>
+        </div>";
 }
 
 ?>
@@ -88,21 +109,13 @@ for ($i = 0; $i < $quantidade; $i++) {
         <div class="barra-lateral">
             <div class="conteudo-lateral">
                 <h3>DESTAQUES</h3>
-                <div class="post-destaque">
+
+                <?php echo $postsDest ?>
+                <!-- <div class="post-destaque">
                     <h4>Título do post</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nostrum porro consequatur quae!
                         Voluptates a corrupti, officiis incidunt molestias quo!</p>
-                </div>
-                <div class="post-destaque">
-                    <h4>Título do post</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nostrum porro consequatur quae!
-                        Voluptates a corrupti, officiis incidunt molestias quo!</p>
-                </div>
-                <div class="post-destaque">
-                    <h4>Título do post</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nostrum porro consequatur quae!
-                        Voluptates a corrupti, officiis incidunt molestias quo!</p>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
