@@ -2,15 +2,29 @@
 
 include ('conexao.php');
 
-$sql_code = "SELECT * FROM user WHERE email = '$email' AND senha = '$senha'";
+$sql_code = "SELECT * FROM post";
 $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL" . $mysqli->error);
 
 $quantidade = $sql_query->num_rows;
 
-$usuario = $sql_query->fetch_assoc();
+$postagem[] = $sql_query->fetch_assoc();
 
 for($i; $i < $quantidade; $i++){
-
+    $posts += `<div class="post">
+    <h2>$postagem[postTitle]</h2>
+    <span class="data-post">29 de Abril de 2024</span>
+    <img src="https://www.colegiodosjesuitas.com.br/wp-content/uploads/2021/08/Artigo_Site_Dia-das-Artes.jpg"
+        width="620px">
+    <p>Descrição postagem</p>
+    <div class="comment-section">
+        <h3>Comentários</h3>
+        <div id="comments-1">
+            <!-- Comentários serão inseridos aqui -->
+        </div>
+        <textarea id="commentInput-1" placeholder="Escreva um comentário..."></textarea>
+        <button onclick="addComment('post-1', 'commentInput-1', 'comments-1')">Enviar</button>
+    </div>
+</div>`;
 }
 $usuario['id']
 
@@ -47,38 +61,8 @@ $usuario['id']
     </div>
     <div class="container">
         <div class="posts">
-            <div class="post" id="post-1">
-                <h2>Título da Postagem 1</h2>
-                <span class="data-post">29 de Abril de 2024</span>
-                <img src="https://www.colegiodosjesuitas.com.br/wp-content/uploads/2021/08/Artigo_Site_Dia-das-Artes.jpg"
-                    width="620px">
-                <p>Descrição postagem</p>
-                <div class="comment-section">
-                    <h3>Comentários</h3>
-                    <div id="comments-1">
-                        <!-- Comentários serão inseridos aqui -->
-                    </div>
-                    <textarea id="commentInput-1" placeholder="Escreva um comentário..."></textarea>
-                    <button onclick="addComment('post-1', 'commentInput-1', 'comments-1')">Enviar</button>
-                </div>
-            </div>
-            <div class="post" id="post-2">
-                <h2>Título da Postagem 2</h2>
-                <span class="data-post">29 de Abril de 2024</span>
-                <img src="https://ceugaleria.com.br/galeria/wp-content/uploads/2019/11/Conheca-5-belas-artes-famosas-na-histo%CC%81ria-da-arte-noite-estrelada-ceu-galeria.jpg"
-                    width="620px">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus quis laboriosam id, porro
-                    vitae iure dolorem totam quia dignissimos fugit?</p>
-                <div class="comment-section">
-                    <h3>Comentários</h3>
-                    <div id="comments-2">
-                        <!-- Comentários serão inseridos aqui -->
-                    </div>
-                    <textarea id="commentInput-2" placeholder="Escreva um comentário..."></textarea>
-                    <button onclick="addComment('post-2', 'commentInput-2', 'comments-2')">Enviar</button>
-                </div>
-            </div>
-            <div class="post" id="post-3">
+            <?php echo $posts ?>
+            <!-- <div class="post" id="post-3">
                 <h2>Título da Postagem 3</h2>
                 <span class="data-post">29 de Abril de 2024</span>
                 <img src="https://ahoratabasco.com/wp-content/uploads/2023/10/Dia-Internacional-del-Artista.jpg"
@@ -88,12 +72,12 @@ $usuario['id']
                 <div class="comment-section">
                     <h3>Comentários</h3>
                     <div id="comments-3">
-                        <!-- Comentários serão inseridos aqui -->
+                        Comentários serão inseridos aqui
                     </div>
                     <textarea id="commentInput-3" placeholder="Escreva um comentário..."></textarea>
                     <button onclick="addComment('post-3', 'commentInput-3', 'comments-3')">Enviar</button>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="barra-lateral">
             <div class="conteudo-lateral">
