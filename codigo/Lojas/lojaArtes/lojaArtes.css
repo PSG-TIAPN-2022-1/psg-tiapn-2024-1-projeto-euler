@@ -3,7 +3,7 @@ body {
     background-image: url('../../assets/ImagemFundo.jpeg');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size:95rem;
+    background-size:95rem;  
 
 }
 #titulo1{
@@ -18,11 +18,9 @@ justify-content: center;
 /*COMEÇO DA NAV*/
 
 
-    a {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
 
-    header {
+header 
+    {
         display: flex;
         justify-content: space-between;
         background-color: #FFFFFF;
@@ -74,12 +72,12 @@ justify-content: center;
 
 /* COMEÇO DO FOOTER*/
 footer{
-    display: flex;
+    display:flex;
     width: 100%;
 } 
 #footer{
-    position: fixed;
-    bottom: 0;
+    position:relative;
+    bottom: 10;
     background-color: cadetblue;
     width:100% ;
     
@@ -89,6 +87,7 @@ footer{
     display: flex;
     justify-content: space-between;
     width: 100%;
+
 }
 
 .redes {
@@ -127,7 +126,9 @@ footer{
 #tel{
     margin-left: 1rem;
 }
-
+#logoProfile{
+    width: 1.5rem;
+}
 
 
 
@@ -193,9 +194,20 @@ body {
     background-image: url('../../assets/ImagemFundo.jpeg');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size:200%;
+    background-size:100rem;
 
 }
+#caixasmain .container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-
+#caixasmain .container .row .col {
+    flex: 1 0 50%;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
 }
