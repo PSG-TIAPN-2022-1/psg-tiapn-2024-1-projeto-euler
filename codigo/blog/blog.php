@@ -2,21 +2,24 @@
 
 include ('conexao.php');
 
+//Quantidade de posts
 $sql_code = "SELECT * FROM post";
 $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL" . $mysqli->error);
 
 $quantidade = $sql_query->num_rows;
 
 $posts = "";
-
 $postsDest = "";
 
 for ($i = 0; $i < $quantidade; $i++) {
+    //Quantidade de comentários
     $sql_code = "SELECT * FROM coment WHERE postID = '$i' + 1";
     $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL" . $mysqli->error);
 
     $quantidadeComent = $sql_query->num_rows;
 
+
+    //Recupera info Post
     $sql_code = "SELECT * FROM post WHERE postID = '$i' + 1";
     $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL" . $mysqli->error);
 
@@ -27,9 +30,7 @@ for ($i = 0; $i < $quantidade; $i++) {
     $url = $postagem['imgUrl'];
     $desc = $postagem['postDesc'];
 
-    $textComent = "";
-    $dataComent = "";
-
+    //Recupera info Comentário
     if ($quantidadeComent == 0) {
         $textComent = "-sem comentários-";
     } else {
@@ -44,6 +45,7 @@ for ($i = 0; $i < $quantidade; $i++) {
         }
     }
 
+    //Exibe posts
     $posts .=
         "<div class=\"post\">
             <h2>$title</h2>
@@ -58,14 +60,16 @@ for ($i = 0; $i < $quantidade; $i++) {
                     <p>$dataComent</p>
                 </div>
                 <br>
-                <textarea id=\"commentInput\" placeholder=\"Escreva um comentário...\"></textarea>
                 <form action=\"blog.php\" method=\"post\">
+                    <textarea id=\"commentInput\" placeholder=\"Escreva um comentário...\" name=\"comentInput\"></textarea>
                     <button type=\"submit\">Enviar</button>
                 </form>
             </div>
         </div>";
 }
 
+
+//Exibe posts destaque
 for ($i = 0; $i < $quantidade; $i++) {
     $sql_code = "SELECT * FROM post WHERE postID = '$i' + 1";
     $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL" . $mysqli->error);
@@ -80,6 +84,22 @@ for ($i = 0; $i < $quantidade; $i++) {
             <h4>$title</h4>
             <p>$desc</p>
         </div>";
+}
+
+
+//Insere comentários
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $comentText = $_POST['comentInput'];
+
+    $sql_code = "SELECT * FROM coment WHERE comentText = '$comentText'";
+    $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL" . $mysqli->error);
+
+    $quantidadeComent = $sql_query->num_rows;
+
+    if ($quantidadeComent == 0) {
+        $sql_code = "INSERT INTO coment (comentText, postID) VALUES ('$comentText', '1')";
+        $sql_query = $mysqli->query($sql_code) or die($aviso = "Falha na execução do código SQL" . $mysqli->error);
+    }
 }
 
 ?>
