@@ -7,27 +7,33 @@ $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQ
 
 $quantidade = $sql_query->num_rows;
 
-$postagem[] = $sql_query->fetch_assoc();
+$postagem = $sql_query->fetch_assoc();
 
-for($i; $i < $quantidade; $i++){
-    $posts += `<div class="post">
-    <h2>$postagem[postTitle]</h2>
-    <span class="data-post">29 de Abril de 2024</span>
-    <img src="https://www.colegiodosjesuitas.com.br/wp-content/uploads/2021/08/Artigo_Site_Dia-das-Artes.jpg"
-        width="620px">
-    <p>Descrição postagem</p>
-    <div class="comment-section">
+$posts = "";
+
+for ($i = 0; $i < $quantidade; $i++) {
+    $title = $postagem['postTitle'];
+    $data = $postagem['postData'];
+    $url = $postagem['imgUrl'];
+    $desc = $postagem['postDesc'];
+
+    $posts .=
+        "<div class=\"post\">
+    <h2>$title</h2>
+    <span class=\"data-post\">$data</span>
+    <img src=\"$url\"
+        width=\"620px\">
+    <p>$desc</p>
+    <div class=\"comment-section\">
         <h3>Comentários</h3>
-        <div id="comments-1">
+        <div id=\"comments-1\">
             <!-- Comentários serão inseridos aqui -->
         </div>
-        <textarea id="commentInput-1" placeholder="Escreva um comentário..."></textarea>
-        <button onclick="addComment('post-1', 'commentInput-1', 'comments-1')">Enviar</button>
+        <textarea id=\"commentInput-1\" placeholder=\"Escreva um comentário...\"></textarea>
+        <button onclick=\"addComment('post-1', 'commentInput-1', 'comments-1')\">Enviar</button>
     </div>
-</div>`;
+</div>";
 }
-$usuario['id']
-
 
 ?>
 
