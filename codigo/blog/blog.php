@@ -12,6 +12,11 @@ $posts = "";
 $postsDest = "";
 
 for ($i = 0; $i < $quantidade; $i++) {
+    $sql_code = "SELECT * FROM coment WHERE postID = '$i' + 1";
+    $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL" . $mysqli->error);
+
+    $quantidadeComent = $sql_query->num_rows;
+
     $sql_code = "SELECT * FROM post WHERE postID = '$i' + 1";
     $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL" . $mysqli->error);
 
@@ -22,6 +27,23 @@ for ($i = 0; $i < $quantidade; $i++) {
     $url = $postagem['imgUrl'];
     $desc = $postagem['postDesc'];
 
+    $textComent = "";
+    $dataComent = "";
+
+    if ($quantidadeComent == 0) {
+        $textComent = "-sem comentários-";
+    } else {
+        for ($j = 0; $j < $quantidadeComent; $j++) {
+            $sql_code = "SELECT * FROM coment WHERE postID = '$i' + 1";
+            $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL" . $mysqli->error);
+
+            $comentario = $sql_query->fetch_assoc();
+
+            $textComent = $comentario['comentText'];
+            $dataComent = $comentario['comentData'];
+        }
+    }
+
     $posts .=
         "<div class=\"post\">
             <h2>$title</h2>
@@ -31,11 +53,15 @@ for ($i = 0; $i < $quantidade; $i++) {
             <p>$desc</p>
             <div class=\"comment-section\">
                 <h3>Comentários</h3>
-                <div id=\"comments-1\">
-                    <!-- Comentários serão inseridos aqui -->
+                <div class=\"comment\">
+                    <h3>$textComent</h3>
+                    <p>$dataComent</p>
                 </div>
-                <textarea id=\"commentInput-1\" placeholder=\"Escreva um comentário...\"></textarea>
-                <button onclick=\"addComment('post-1', 'commentInput-1', 'comments-1')\">Enviar</button>
+                <br>
+                <textarea id=\"commentInput\" placeholder=\"Escreva um comentário...\"></textarea>
+                <form action=\"blog.php\" method=\"post\">
+                    <button type=\"submit\">Enviar</button>
+                </form>
             </div>
         </div>";
 }
