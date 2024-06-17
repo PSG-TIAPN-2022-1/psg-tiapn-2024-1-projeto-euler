@@ -51,7 +51,6 @@ li{
 .header {
     font-style: normal;
     color: black;
-    font-size: 200%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display:flex;
     align-items: center;
@@ -59,7 +58,7 @@ li{
 
 
 .grid {
-    background-image: url('/codigo/assets/fundoMenu.jpg');
+    background-image: url('img/fundoMenu.jpg');
     background-repeat: no-repeat;
     height: 100vh;
     background-size: cover;

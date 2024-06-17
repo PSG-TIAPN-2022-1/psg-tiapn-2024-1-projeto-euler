@@ -11,28 +11,27 @@
 </head>
 
 <body>
-               
+
     <div class="header">
-        <img src="/codigo/assets/kellyLogo.png" alt="" width="20%" id="logo">
-        <ul class="navbar">     
+        <img src="img/kellyLogo.png" alt="" width="20%" id="logo">
+        <ul class="navbar">
             <li class="navItem" id="current"><a>Menu</a></li>
             <li class="navItem"><a href="#">Blog</a></li>
             <li class="navItem"><a href="#" onclick="clicado(1)">Loja</a></li>
             <li class="navItem"><a href="#" onclick="clicado(2)">Sobre</a></li>
-            <li><img src="/codigo/assets/profileIcon.png" alt="" width="10%"
-                id="logoProfile"></li>
-        </ul>        
+            <li><img src="img/profileIcon.png" alt="" width="10%" id="logoProfile"></li>
+        </ul>
     </div>
     <div class="grid">
         <div class="center">
             <div class="conteudo">
                 <h1 class="title">Artes</h1>
-            <p class="text">Fotografia, Desenhos, Gravuras e Exposições você encontrará aqui<br>
-                Nossa arte é a ciência que visa promover a saúde e o bem-estar: do corpo, da mente e das
-                emoções.
-            </p>
-            <button id="bt" onclick="scroll()">Saiba mais!</button>
-            </div>       
+                <p class="text">Fotografia, Desenhos, Gravuras e Exposições você encontrará aqui<br>
+                    Nossa arte é a ciência que visa promover a saúde e o bem-estar: do corpo, da mente e das
+                    emoções.
+                </p>
+                <button id="bt" onclick="scroll()">Saiba mais!</button>
+            </div>
         </div>
         <div class="footer">
             <div class="title">
@@ -46,8 +45,8 @@
                 <img src="https://picsum.photos/id/163/250/250" alt="an empty table in a restaurant">
                 <img src="https://picsum.photos/id/180/250/250" alt="a laptop with a notebook">
                 <img src="https://picsum.photos/id/20/250/250" alt="a laptop and many books around it">
-              </div>
-              
+            </div>
+
             <div class="troca">
                 <button onclick="clicado(3)">Aromaterapia</button>
             </div>
@@ -55,4 +54,26 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
+
+<style>
+    header {
+        width: 100%;
+    }
+
+    .grid {
+        background-image: url('img/fundoMenu.jpg');
+    }
+
+    .troca {
+        background-image: url(img/planta3-1024x522.png);
+    }
+
+    @media screen and (max-width: 768px) {
+        .navbar a{
+            margin: -10%;
+            font-size: 0.2rem;
+        }
+    }
+</style>
