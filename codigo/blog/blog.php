@@ -18,7 +18,6 @@ for ($i = 0; $i < $quantidade; $i++) {
 
     $quantidadeComent = $sql_query->num_rows;
 
-
     //Recupera info Post
     $sql_code = "SELECT * FROM post WHERE postID = '$i' + 1";
     $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL" . $mysqli->error);
@@ -30,18 +29,40 @@ for ($i = 0; $i < $quantidade; $i++) {
     $url = $postagem['imgUrl'];
     $desc = $postagem['postDesc'];
 
+
+
     //Recupera info Comentário
+    $coments = "";
+
     if ($quantidadeComent == 0) {
-        $textComent = "-sem comentários-";
+        $coments = "<div class=\"comment\">
+                    <p>-sem comentários-</p>
+                    <br>
+                </div>";
     } else {
-        for ($j = 0; $j < $quantidadeComent; $j++) {
-            $sql_code = "SELECT * FROM coment WHERE postID = '$i' + 1";
-            $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL" . $mysqli->error);
+        $sql_code = "SELECT * FROM coment WHERE postID = '$i'+ 1";
+        $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL" . $mysqli->error);
+        $qnt = 0;
 
-            $comentario = $sql_query->fetch_assoc();
+        while ($comentario = $sql_query->fetch_assoc()) {
+            if ($qnt > 2) {
+                $coments .=
+                    "<button id=\"btnComment\"><h5>Mostrar mais</h5></button>
+                    <br>";
+                break;
+            } else {
+                $textComent = $comentario['comentText'];
+                $dataComent = $comentario['comentData'];
 
-            $textComent = $comentario['comentText'];
-            $dataComent = $comentario['comentData'];
+                $coments .=
+                    "<div class=\"comment\">
+                    <h3>$textComent</h3>
+                    <p>$dataComent</p>
+                    <br>
+                </div>";
+
+            }
+            $qnt++;
         }
     }
 
@@ -55,10 +76,7 @@ for ($i = 0; $i < $quantidade; $i++) {
             <p>$desc</p>
             <div class=\"comment-section\">
                 <h3>Comentários</h3>
-                <div class=\"comment\">
-                    <h3>$textComent</h3>
-                    <p>$dataComent</p>
-                </div>
+                $coments
                 <br>
                 <form action=\"blog.php\" method=\"post\">
                     <textarea id=\"commentInput\" placeholder=\"Escreva um comentário...\" name=\"comentInput\"></textarea>
@@ -179,88 +197,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <img src="https://picsum.photos/id/20/250/250" alt="a laptop and many books around it">
         </div>
     </div>
-    <script>
-        function loadComments(postId, commentsId) {
-            var comments = JSON.parse(localStorage.getItem(postId) || '[]');
-            comments.forEach(comment => {
-                addCommentElement(commentsId, comment.text, comment.date);
-            });
-        }
-
-        function addCommentElement(commentsId, commentText, commentDate) {
-            var comment = document.createElement("div");
-            comment.className = "comment";
-
-            var commentContent = document.createElement("p");
-            commentContent.textContent = commentText;
-
-            var commentDateElem = document.createElement("div");
-            commentDateElem.className = "comment-date";
-            commentDateElem.textContent = commentDate;
-
-            var deleteButton = document.createElement("button");
-            deleteButton.textContent = "Excluir";
-            deleteButton.className = "delete-button";
-            deleteButton.onclick = function () {
-                comment.remove();
-                saveComments();
-            };
-
-            comment.appendChild(commentContent);
-            comment.appendChild(commentDateElem);
-            comment.appendChild(deleteButton);
-            document.getElementById(commentsId).appendChild(comment);
-        }
-
-        function addComment(postId, inputId, commentsId) {
-            var commentInput = document.getElementById(inputId);
-            var commentText = commentInput.value;
-            if (commentText) {
-                var now = new Date();
-                var commentDate = now.toLocaleString();
-                addCommentElement(commentsId, commentText, commentDate);
-
-                var comments = JSON.parse(localStorage.getItem(postId) || '[]');
-                comments.push({ text: commentText, date: commentDate });
-                localStorage.setItem(postId, JSON.stringify(comments));
-
-                commentInput.value = "";
-            }
-        }
-
-        function saveComments() {
-            var posts = document.querySelectorAll('.post');
-            posts.forEach(post => {
-                var postId = post.id;
-                var comments = [];
-                post.querySelectorAll('.comment').forEach(comment => {
-                    comments.push({
-                        text: comment.querySelector('p').textContent,
-                        date: comment.querySelector('.comment-date').textContent
-                    });
-                });
-                localStorage.setItem(postId, JSON.stringify(comments));
-            });
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-            var posts = document.querySelectorAll('.post');
-            posts.forEach(post => {
-                var postId = post.id;
-                var commentsId = "comments-" + postId.split('-')[1];
-                loadComments(postId, commentsId);
-            });
-        });
-
-        window.setInterval(function () {
-            if ($(window).width() < 1200) {
-                $('#logo').prop("src", "img/kellyLogo-vertical-trans.png");
-            }
-            else {
-                $('#logo').prop("src", "img/kellyLogo.png");
-            }
-        }, 1)
-    </script>
 </body>
 
 </html>
+
+<style>
+    #btnComment{
+        justify-content: center;   
+    }
+</style>
