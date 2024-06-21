@@ -14,16 +14,16 @@
 </html>
 
 <script>
+
+    const tipo = sessionStorage.getItem("Tipo");
+    if (tipo == null)
+        tipo = "true";
+
     window.onload = function () {
-    let tipo = sessionStorage.getItem("tipo");
-    let conteudo = document.querySelector("main");
-    if (tipo == null) {
-        tipo = true
-    };
-    tipo = true;
-    if (tipo) {
-        conteudo.innerHTML =
-            `
+        let conteudo = document.querySelector("main");
+        if (tipo == "true") {
+            conteudo.innerHTML =
+                `
 <head>
 <link rel="stylesheet" href="menuAroma.css">
 </head>
@@ -62,15 +62,15 @@
             <img src="https://picsum.photos/id/20/250/250" alt="a laptop and many books around it">
         </div>
         <div class="troca">
-            <button>Artes</button>
+            <button onclick="clicado(3)">Artes</button>
         </div>
     </div>
 </div>
 </body>
 `;
-    } else {
-        conteudo.innerHTML =
-            `
+        } else if(tipo == "false"){
+            conteudo.innerHTML =
+                `
 <head>
 <link rel="stylesheet" href="menuArtes.css">
 </head>
@@ -118,49 +118,49 @@
 </div>
 </body>
 `;
-    }
-}
-
-function clicado(x) {
-    let tipo = sessionStorage.getItem("tipo");
-    if (tipo == null)
-        tipo = true;
-
-    if (tipo == true) {
-        switch (x) {
-            case 1:
-                window.location.href = "/codigo/Lojas/lojaArtes/lojaArtes.html"
-                break;
-            case 2:
-                window.location.href = "/codigo/Sobres/sobreArtes/sobreArtes.html"
-                break;
-            case 3:
-                window.location.href = "/codigo/Menus/MenuAroma/menuAroma.html"
-            default:
-                break;
-        }
-
-    }
-    else {
-        switch (x) {
-            case 1:
-                window.location.href = "/codigo/Lojas/lojaAroma/lojaAroma.html"
-                break;
-            case 2:
-                window.location.href = "/codigo/Sobres/sobreAroma/sobreAroma.html"
-                break;
-            case 3:
-                window.location.href = "/codigo/Menus/MenuArtes/menuArtes.html"
-            default:
-                break;
         }
     }
-}
 
-function scroll() {
-    window.scrollBy({
-        top: 1200,
-        behavior: 'smooth'
-    });
-}
+    function clicado(x) {
+
+
+        if (tipo == true) {
+            switch (x) {
+                case 3:
+                    window.location.reload();
+                    sessionStorage.setItem("Tipo", false); //False == Arte
+                    break;
+                case 2:
+                    window.location.href = "projetoEueler/codigo/Sobres/sobreArtes/sobreArtes.html"
+                    break;
+                case 1:
+                    window.location.href = "projetoEuler/codigo/Lojas/lojaAroma/lojaAroma.html"
+                default:
+                    break;
+            }
+
+        }
+        else {
+            switch (x) {
+                case 3:
+                    window.location.reload();
+                    sessionStorage.setItem("Tipo", true); //True == Aroma
+                    break;
+                case 2:
+                    window.location.href = "/codigo/Sobres/sobreAroma/sobreAroma.html"
+                    break;
+                case 1:
+                    window.location.href = "projetoEuler/codigo/Lojas/lojaArtes/lojaArtes.html"
+                default:
+                    break;
+            }
+        }
+    }
+
+    function scroll() {
+        window.scrollBy({
+            top: 1200,
+            behavior: 'smooth'
+        });
+    }
 </script>
