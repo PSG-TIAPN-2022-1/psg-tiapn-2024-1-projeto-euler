@@ -6,23 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/931e8d48bd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="sobres.css">
-    <title>Sobre</title>
+    <title>Sobre - Kelly Fonseca</title>
 </head>
 
 <body id="jquery">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
-    <script src="sobres.js"></script>
 </body>
 
 <body>
     <div class="header">
         <img src="" class="img-logo" width="5%" style="margin-left: 5%;">
         <ul class="navbar">
-            <li class="navItem"><a href="/codigo/Menus/MenuAroma/menuAroma.html">Menu</a></li>
-            <li class="navItem"><a href="/codigo/blog/blog.php">Blog</a></li>
-            <li class="navItem"><a href="/codigo/Lojas/lojaAroma/lojaAroma.html">Loja</a></li>
+            <li class="navItem"><a href="../Menus/Menu-base/menu-base.html">Menu</a></li>
+            <li class="navItem"><a href="../Blog/blog.php">Blog</a></li>
+            <li class="navItem"><a href="../Lojas/lojas.html">Loja</a></li>
             <li class="navItem"><a href="#">Sobre</a></li>
             <li><img src="img/profileIcon.png" alt="" width="10%" id="logoProfile"></li>
         </ul>
@@ -56,3 +54,17 @@
 </body>
 
 </html>
+
+<script>
+    window.onload = function () {
+        let tipo = sessionStorage.getItem("Tipo");
+        if (tipo == null)
+            tipo = "true";
+        if (tipo == "true") {
+            $('.img-logo').prop("src", "img/logoAroma-trans.png");
+        }
+        else if (tipo == "false")
+            $('.img-logo').prop("src", "img/kellyLogo.png");
+
+    } 
+</script>

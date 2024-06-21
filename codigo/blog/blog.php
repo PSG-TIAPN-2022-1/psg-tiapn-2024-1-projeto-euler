@@ -141,12 +141,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <body>
     <div class="header">
-        <img src="" alt="Logo KellyBlog" id="logo" onclick="clicado()" width="20%">
+        <img src="" alt="Logo KellyBlog" id="logo" onclick="clicado()">
         <ul class="navbar">
-            <li class="navItem"><a href="/projetoEuler/codigo/Menus/Menu-base/index.html">Menu</a></li>
+            <li class="navItem"><a href="../Menus/Menu-base/index.html">Menu</a></li>
             <li class="navItem"><a href="" id="current">Blog</a></li>
-            <li class="navItem"><a href="/projetoEuler/codigo/Lojas/lojas.html">Loja</a></li>
-            <li class="navItem"><a href="/projetoEuler/codigo/Sobres/sobres.html">Sobre</a></li>
+            <li class="navItem"><a href="../Lojas/lojas.html">Loja</a></li>
+            <li class="navItem"><a href="../Sobres/sobres.html">Sobre</a></li>
             <li><img src="img/profileIcon.png" alt="Profile Icon" id="logoProfile"></li>
         </ul>
     </div>
@@ -203,19 +203,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <script>
     window.onload = function () {
-        let tipo = sessionStorage.getItem("tipo");
+        let tipo = sessionStorage.getItem("Tipo");
         if (tipo == null)
-            tipo = true;
-        tipo = true;
-        if (tipo == true)
+            tipo = "true";
+        if (tipo == "true")
             $('#logo').prop("src", "img/logoAroma.jpg");
-        else
+        else if(tipo == "false")
             $('#logo').prop("src", "img/kellyLogo.png");
 
     } 
 
     function clicado(){
-        window.location.href = "/projetoEuler/codigo/Menus/Menu-base/index.html"
+        window.location.href = "../Menus/Menu-base/index.html"
     }
 </script>
 
