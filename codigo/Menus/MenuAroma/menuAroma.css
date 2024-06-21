@@ -141,6 +141,9 @@ li{
 .gallery{
     cursor: pointer;
 }
+#current{
+    color: gray;
+}
 @media screen and (max-width: 992px) {
     .gallery img{
         width: 20%;
@@ -260,9 +263,6 @@ li{
     .troca{
         background: linear-gradient(to right, #5F5D9C 10%, transparent 30%);
         border-top-left-radius: 60%;
-    }
-    #current{
-        color: gray;
     }
 }
 
