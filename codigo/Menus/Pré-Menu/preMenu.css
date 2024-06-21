@@ -10,13 +10,12 @@
 
 .esquerda{
     background-color: #9BB8CD;
-    background-image: url(Imagem-inicial-Pintura-1024x682.jpg);
+    background-image: url(img/Imagem-inicial-Pintura-1024x682.jpg);
     background-size: cover;
 }
 .direita{
     background-color: #5F5D9C;
-    
-    background-image: url(aromaterapia.jpg);
+    background-image: url(img/aromaterapia.jpg);
     background-size: cover;
     
 }
@@ -51,6 +50,7 @@
     margin-top: 50%;
     width: 70%;
     color:black;
+    background-color: rgba(0, 0, 0, 0.342);
 }
 .esquerda:hover .description, .direita:hover .description {
     opacity:1;

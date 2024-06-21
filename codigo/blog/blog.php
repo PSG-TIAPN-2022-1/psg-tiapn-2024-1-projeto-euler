@@ -141,12 +141,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <body>
     <div class="header">
-        <img src="img/kellyLogo.png" alt="Logo KellyBlog" id="logo">
+        <img src="" alt="Logo KellyBlog" id="logo" onclick="clicado()" width="20%">
         <ul class="navbar">
-            <li class="navItem"><a href="#">Menu</a></li>
-            <li class="navItem"><a href="#">Blog</a></li>
-            <li class="navItem"><a href="#">Loja</a></li>
-            <li class="navItem"><a href="#">Sobre</a></li>
+            <li class="navItem"><a href="/projetoEuler/codigo/Menus/Menu-base/index.html">Menu</a></li>
+            <li class="navItem"><a href="" id="current">Blog</a></li>
+            <li class="navItem"><a href="/projetoEuler/codigo/Lojas/lojas.html">Loja</a></li>
+            <li class="navItem"><a href="/projetoEuler/codigo/Sobres/sobres.html">Sobre</a></li>
             <li><img src="img/profileIcon.png" alt="Profile Icon" id="logoProfile"></li>
         </ul>
     </div>
@@ -200,6 +200,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </body>
 
 </html>
+
+<script>
+    window.onload = function () {
+        let tipo = sessionStorage.getItem("tipo");
+        if (tipo == null)
+            tipo = true;
+        tipo = true;
+        if (tipo == true)
+            $('#logo').prop("src", "img/logoAroma.jpg");
+        else
+            $('#logo').prop("src", "img/kellyLogo.png");
+
+    } 
+
+    function clicado(){
+        window.location.href = "/projetoEuler/codigo/Menus/Menu-base/index.html"
+    }
+</script>
 
 <style>
     #btnComment{

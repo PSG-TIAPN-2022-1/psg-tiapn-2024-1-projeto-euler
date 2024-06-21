@@ -25,6 +25,11 @@ body {
     font-size: 200%;
 }
 
+#current{
+    color: gray;
+    cursor: default;
+}
+
 .header img#logo {
     width: 20%;
     height: 100%;

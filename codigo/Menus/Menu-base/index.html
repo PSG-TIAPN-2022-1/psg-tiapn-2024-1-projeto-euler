@@ -68,7 +68,7 @@
 </div>
 </body>
 `;
-        } else if(tipo == "false"){
+        } else if (tipo == "false") {
             conteudo.innerHTML =
                 `
 <head>
@@ -123,11 +123,10 @@
 
     function clicado(x) {
 
-
-        if (tipo == true) {
+        if (tipo == "true") {
             switch (x) {
                 case 3:
-                    window.location.reload();
+                    window.location.href = "/projetoEuler/codigo/Menus/Menu-base/index.html"
                     sessionStorage.setItem("Tipo", false); //False == Arte
                     break;
                 case 2:
@@ -143,7 +142,7 @@
         else {
             switch (x) {
                 case 3:
-                    window.location.reload();
+                    window.location.href = "/projetoEuler/codigo/Menus/Menu-base/index.html"
                     sessionStorage.setItem("Tipo", true); //True == Aroma
                     break;
                 case 2:
