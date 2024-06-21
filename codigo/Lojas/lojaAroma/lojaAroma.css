@@ -1,9 +1,61 @@
 
-body {
-    position: relative;
+/*COMEÇO DA NAV*/
+body, html {
     margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+    height: 100vh;
+}
+a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 20px gray;
+    height: 10vh;
+}
+#current{
+    color: gray;
+}
+#logoProfile {
+    width: 30%;
+    height: 60%;
+    margin-top: 15%;
 }
 
+#logoProfile:hover{
+    opacity: 70%;
+    cursor: pointer;
+}
+.header ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+li{
+    list-style-type: none;
+    margin: 1rem;
+    
+}
+.navItem a {
+    display: block;
+    text-align: center;
+    text-decoration: none; 
+    font-size: 1.1rem;
+}
+.header{
+    font-style: normal;
+    color: black;
+    font-size: 200%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display:flex;
+    align-items: center;
+}
+
+/*FIM DA NAV BAR*/
 body::before {
     content: "";
     position: fixed;
@@ -11,79 +63,35 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../../assets/planta3-1024x522.png');
+    background-image: url('/codigo/assets/planta3-1024x522.png');
     background-repeat: no-repeat;
-    background-position: center bottom; /* Ajuste a posição conforme necessário */
-    background-size: 90rem;
-    opacity: 0.5; /* Ajuste a opacidade conforme necessário */
+    background-position: center center; /* Ajuste a posição conforme necessário */
+    background-size: cover;
+    opacity: 0.3; /* Ajuste a opacidade conforme necessário */
     z-index: -1;
 }
-#titulo1{
+
+.main {
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.row {
     display: flex;
     justify-content: center;
-
+    margin-bottom: 20px;
+    gap: 30px;
 }
-#titulo2{
-display: flex;
-justify-content: center;
+#titulo1 h1{
+    font-size: 2rem;
+    font-weight: lighter;
+    color: #000000;
+    margin-bottom: 20px;
 }
-/*COMEÇO DA NAV*/
-
-
-    a {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        background-color: #FFFFFF;
-        box-shadow: 0px 5px 20px gray;
-        font-style: normal;
-        color: black;
-        font-size: 100%;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        align-items: center;
-        opacity: 100%;
-        width: 100%;
-    }
-
-    #logo {
-        height: 90%;
-    }
-
-    #logoProfile {
-        width: 50%;
-        height: 60%;
-        margin-top: 15%;
-    }
-
-    #logoProfile:hover {
-        opacity: 70%;
-        cursor: pointer;
-    }
-
-    header ul {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    li {
-        list-style-type: none;
-        margin: 1rem;
-
-    }
-
-    .navItem a {
-        display: block;
-        text-align: center;
-        text-decoration: none;
-    }
-
-/*FIM DA NAV BAR
-
-
 /* COMEÇO DO FOOTER*/
 footer{
     display: flex;

@@ -19,7 +19,6 @@ a{
     color: gray;
 }
 
-
 #logoProfile {
     width: 30%;
     height: 60%;
@@ -68,8 +67,6 @@ li{
         'footer footer';
    
 }
-
-
 .center {
     display: flex;
     align-items: start;
@@ -141,9 +138,6 @@ li{
 .gallery{
     cursor: pointer;
 }
-#current{
-    color: gray;
-}
 @media screen and (max-width: 992px) {
     .gallery img{
         width: 20%;
@@ -168,9 +162,6 @@ li{
     li{
         font-size: 1rem;
     }
-    #logo{
-        width: 30%;
-    }
     h1{
         font-size: 1.5rem;
     }
@@ -184,7 +175,7 @@ li{
         font-size: 1rem;
     }
     #logoProfile{
-        width: 70%;    
+        width: 30%;    
     }
     .troca button{
         width: 20%;
@@ -204,7 +195,7 @@ li{
         font-size: 1rem;
     }
     #logo{
-        width: 30%;
+        width: 5%;
     }
     h1{
         font-size: 1.5rem;
@@ -237,6 +228,9 @@ li{
     .title p{
         margin-top: 10px;
         margin-bottom: 50px;
+    }
+    #logoProfile{
+        width: 40%; 
     }
     .gallery{
         display: flex;
