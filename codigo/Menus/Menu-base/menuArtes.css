@@ -8,6 +8,7 @@ body, html {
 a{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap');
 .header {
     display: flex;
     justify-content: space-between;
@@ -109,6 +110,7 @@ li{
 }
 .title h1, p{
     text-align: center;
+    font-family: 'Playwrite NZ', sans-serif;
 }
 .title h1{
     font-size: 3rem;
