@@ -153,6 +153,7 @@ li{
     }
     #logo{
         width: 30%;
+        display:none;
     }
     #logoProfile{
         height: 30%;
@@ -170,11 +171,12 @@ li{
         font-size: 0.5rem;
         height: 40%;
     }
-    .navItem a{
-        font-size: 0.6rem;
+    #logoProfile{
+        height: 30px;
+        width: 30px;
     }
     li{
-        font-size: 0.5rem;
+        font-size: 1.5rem;
     }
     #logo{
         width: 40%;
@@ -206,6 +208,9 @@ li{
         height: 50px;
         width: 150px;
         font-size: 0.8rem;
-    }    
+    }   
+    .navbar{
+        margin-left: -10%;
+    } 
   }
 
