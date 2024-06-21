@@ -20,6 +20,7 @@ a{
 }
 #logo {
     height: 90%;
+    width: 20%;
 }
 
 #logoProfile {
@@ -152,6 +153,7 @@ li{
     }
     #logo{
         width: 30%;
+        display:none;
     }
     #logoProfile{
         height: 30%;
@@ -169,11 +171,12 @@ li{
         font-size: 0.5rem;
         height: 40%;
     }
-    .navItem a{
-        font-size: 0.6rem;
+    #logoProfile{
+        height: 30px;
+        width: 30px;
     }
     li{
-        font-size: 0.5rem;
+        font-size: 1.5rem;
     }
     #logo{
         width: 40%;
@@ -187,9 +190,6 @@ li{
         width: 50%;
         height: 15%;
     }
-    .title h1, p{
-        text-align: 0;
-    }
     .title h1{
         font-size: 1rem;
     }
@@ -199,12 +199,13 @@ li{
     }
     .title p{
         font-size: 1rem;
-        width: 90%;
     }
     .troca button{
         height: 50px;
         width: 150px;
         font-size: 0.8rem;
-    }    
-  }
-
+    }   
+    .navbar{
+        margin-left: -10%;
+    }
+}
