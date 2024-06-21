@@ -162,9 +162,6 @@ li{
     li{
         font-size: 1rem;
     }
-    #logo{
-        width: 30%;
-    }
     h1{
         font-size: 1.5rem;
     }
@@ -178,7 +175,7 @@ li{
         font-size: 1rem;
     }
     #logoProfile{
-        width: 70%;    
+        width: 30%;    
     }
     .troca button{
         width: 20%;
@@ -198,7 +195,7 @@ li{
         font-size: 1rem;
     }
     #logo{
-        width: 30%;
+        width: 5%;
     }
     h1{
         font-size: 1.5rem;
@@ -231,6 +228,9 @@ li{
     .title p{
         margin-top: 10px;
         margin-bottom: 50px;
+    }
+    #logoProfile{
+        width: 40%; 
     }
     .gallery{
         display: flex;
