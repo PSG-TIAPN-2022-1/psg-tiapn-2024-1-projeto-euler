@@ -16,12 +16,12 @@
 
 <body>
     <div class="header">
-        <img src="" class="img-logo" width="5%" style="margin-left: 5%;">
+        <img src="" class="img-logo" width="5%" style="margin-left: 5%;" onclick="clicado()">
         <ul class="navbar">
-            <li class="navItem"><a href="../Menus/Menu-base/menu-base.html">Menu</a></li>
+            <li class="navItem"><a href="../Menus/Menu-base/index.html">Menu</a></li>
             <li class="navItem"><a href="../Blog/blog.php">Blog</a></li>
             <li class="navItem"><a href="../Lojas/lojas.html">Loja</a></li>
-            <li class="navItem"><a href="#">Sobre</a></li>
+            <li class="navItem" id="current"><a>Sobre</a></li>
             <li><img src="img/profileIcon.png" alt="" width="10%" id="logoProfile"></li>
         </ul>
     </div>
@@ -67,4 +67,8 @@
             $('.img-logo').prop("src", "img/kellyLogo.png");
 
     } 
+
+    function clicado(){
+        window.location.href = "../Menus/Menu-base/index.html"
+    }
 </script>

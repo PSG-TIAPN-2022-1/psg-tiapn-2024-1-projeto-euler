@@ -18,6 +18,7 @@ a{
 }
 #current{
     color: gray;
+    cursor: default;
 }
 #logo {
     height: 90%;

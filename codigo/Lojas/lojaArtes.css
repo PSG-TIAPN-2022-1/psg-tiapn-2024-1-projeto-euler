@@ -15,6 +15,11 @@ body {
 display: flex;
 justify-content: center;
 }
+
+#current{
+    color: gray;
+    cursor: default;
+}
 /*COMEÇO DA NAV*/
 
 

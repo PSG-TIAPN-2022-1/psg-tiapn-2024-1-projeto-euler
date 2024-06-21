@@ -144,7 +144,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <img src="" alt="Logo KellyBlog" id="logo" onclick="clicado()">
         <ul class="navbar">
             <li class="navItem"><a href="../Menus/Menu-base/index.html">Menu</a></li>
-            <li class="navItem"><a href="" id="current">Blog</a></li>
+            <li class="navItem" id="current"><a>Blog</a></li>
             <li class="navItem"><a href="../Lojas/lojas.html">Loja</a></li>
             <li class="navItem"><a href="../Sobres/sobres.html">Sobre</a></li>
             <li><img src="img/profileIcon.png" alt="Profile Icon" id="logoProfile"></li>

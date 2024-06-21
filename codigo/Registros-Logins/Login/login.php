@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['nome'] = $usuario['nome'];
             $_SESSION['email'] = $usuario['email'];
 
-            header("Location: /projetoEuler/codigo/Menus/Menu-base/index.html");
+            header("Location: ../Menus/Menu-base/index.html");
         } else {
             $aviso = "Falha ao logar! E-mail ou senha incorretos";
         }
@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </body>
 
 <body>
-    <img class="img-logo" src="">
+    <img class="img-logo" src="" onclick="clicado()">
     <div class="page">
         <div class="card">
             <h1>Entrar</h1>
@@ -94,15 +94,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     };
 
     window.onload = function () {
-        let tipo = sessionStorage.getItem("tipo");
+        let tipo = sessionStorage.getItem("Tipo");
         if (tipo == null)
-            tipo = true;
-        if (tipo == true)
+            tipo = "true";
+        if (tipo == "true")
             $('.img-logo').prop("src", "img/logoAroma.jpg");
         else
             $('.img-logo').prop("src", "img/kellyLogo-vertical.png");
 
     } 
+
+    function clicado(){
+        window.location.href = "../Menus/Menu-base/index.html"
+    }
 </script>
 
 <style>
@@ -124,4 +128,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         background-color: antiquewhite;
         font-family: 'Times New Roman', Times, serif;
     }
+    
 </style>

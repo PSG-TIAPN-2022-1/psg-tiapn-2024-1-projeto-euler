@@ -19,6 +19,7 @@ a{
 }
 #current{
     color: gray;
+    cursor: default;
 }
 #logoProfile {
     width: 30%;

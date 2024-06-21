@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $sql_code = "INSERT INTO user (nome, email, senha) VALUES ('$nome','$email','$senha')";
         $sql_query = $mysqli->query($sql_code) or die($aviso = "Falha na execução do código SQL" . $mysqli->error);
 
-        header("Location: /projetoEuler/codigo/Menus/Menu-base/index.html");
+        header("Location: ../Menus/Menu-base/index.html");
     } else {
         $aviso = "Falha ao registrar! E-mail já está sendo utilizado";
     }
@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </body>
 
 <body>
-    <img class="img-logo" src="">
+    <img class="img-logo" src="" onclick="clicado()">
     <div class="page">
         <div class="card">
             <form action="registro.php" method="post">
@@ -78,15 +78,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     };
 
     window.onload = function () {
-        let tipo = sessionStorage.getItem("tipo");
+        let tipo = sessionStorage.getItem("Tipo");
         if (tipo == null)
-            tipo = true;
-        if (tipo == true) {
+            tipo = "true";
+        if (tipo == "true") {
             $('.img-logo').prop("src", "img/logoAroma.jpg");
         }
         else
             $('.img-logo').prop("src", "img/kellyLogo.png");
     } 
+
+    function clicado(){
+        window.location.href = "../Menus/Menu-base/index.html"
+    }
 </script>
 
 <style>

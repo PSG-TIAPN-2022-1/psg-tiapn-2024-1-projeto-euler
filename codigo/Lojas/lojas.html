@@ -40,10 +40,10 @@
   <div class="header">
     <img src="img/logoAroma.jpg" alt="" width="5%" style="margin-left: 5%;" id="logo">
     <ul class="navbar">
-      <li class="navItem"><a href="#">Menu</a></li>
-      <li class="navItem"><a href="#">Blog</a></li>
-      <li class="navItem"><a href="#">Loja</a></li>
-      <li class="navItem"><a href="#">Sobre</a></li>
+      <li class="navItem"><a href="../Menus/Menu-base/index.html">Menu</a></li>
+      <li class="navItem"><a href="../Blog/blog.php">Blog</a></li>
+      <li class="navItem" id="current"><a>Loja</a></li>
+      <li class="navItem"><a href="../Sobres/sobres.html">Sobre</a></li>
       <li><img src="img/profileIcon.png" alt="" width="10%" id="logoProfile"></li>
     </ul>
   </div>
@@ -127,7 +127,7 @@
       <ul class="navbar">
         <li class="navItem"><a href="../Menus/menu-base.html">Menu</a></li>
         <li class="navItem"><a href="../Blog/blog.php">Blog</a></li>
-        <li class="navItem"><a href="">Loja</a></li>
+        <li class="navItem" id="current"><a>Loja</a></li>
         <li class="navItem"><a href="../Sobres/sobres.html">Sobre</a></li>
         <li>
           <img src="img/profileIcon.png" alt="" id="logoProfile" />
@@ -203,14 +203,6 @@
     }
 
     function clicado() {
-
-        if (tipo == "true") {
-            sessionStorage.setItem("Tipo", false); //False == Arte
-        }
-        else {
-            sessionStorage.setItem("Tipo", true); //True == Aroma
-        }
-
         window.location.href = "../Menus/Menu-base/index.html"
     }
 
