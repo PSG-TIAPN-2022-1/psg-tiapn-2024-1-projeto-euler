@@ -261,5 +261,8 @@ li{
         background: linear-gradient(to right, #5F5D9C 10%, transparent 30%);
         border-top-left-radius: 60%;
     }
+    #current{
+        color: gray;
+    }
 }
 
