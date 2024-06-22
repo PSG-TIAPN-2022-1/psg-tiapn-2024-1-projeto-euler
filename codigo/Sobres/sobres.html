@@ -16,7 +16,7 @@
 
 <body>
     <div class="header">
-        <img src="" class="img-logo" width="20%" style="margin-left: 5%;" onclick="clicado()">
+        <img src="" class="img-logo" style="margin-left: 5%;" onclick="clicado()">
         <ul class="navbar">
             <li class="navItem"><a href="../Menus/Menu-base/index.html">Menu</a></li>
             <li class="navItem"><a href="../Blog/blog.php">Blog</a></li>
@@ -59,14 +59,18 @@
     window.onload = function () {
         const tipo = sessionStorage.getItem("Tipo");
 
-        if (tipo == "true")
+        if (tipo == "true") {
             $('.img-logo').prop("src", "img/logoAroma-trans.png");
-        else
+            $('.img-logo').css("width", "5%");
+        }
+        else{
             $('.img-logo').prop("src", "img/kellyLogo.png");
+            $('.img-logo').css("width", "20%");
+        }
 
-    } 
+    }
 
-    function clicado(){
+    function clicado() {
         window.location.href = "../Menus/Menu-base/index.html"
     }
 </script>

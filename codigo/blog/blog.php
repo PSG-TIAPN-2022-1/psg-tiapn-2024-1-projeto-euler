@@ -205,11 +205,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     window.onload = function () {
         const tipo = sessionStorage.getItem("Tipo");
 
-        if (tipo == "true")
-            $('#logo').prop("src", "img/logoAroma.jpg");
-        else
+        if (tipo == "true"){
+            $('#logo').prop("src", "img/logoAroma-trans.png");
+            $('#logo').css("width", "5%");
+            $('#logo').css("margin-left", "5%");
+        }
+        else{
             $('#logo').prop("src", "img/kellyLogo.png");
-
+            $('#logo').css("width", "20%");
+        }
     } 
 
     function clicado(){
