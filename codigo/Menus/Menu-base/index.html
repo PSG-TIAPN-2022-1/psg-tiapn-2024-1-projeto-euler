@@ -16,8 +16,6 @@
 <script>
 
     const tipo = sessionStorage.getItem("Tipo");
-    if (tipo == null)
-        tipo = "true";
 
     window.onload = function () {
         let conteudo = document.querySelector("main");
@@ -62,13 +60,13 @@
             <img src="https://picsum.photos/id/20/250/250" alt="a laptop and many books around it">
         </div>
         <div class="troca">
-            <button onclick="clicado(3)">Artes</button>
+            <button onclick="clicado()">Artes</button>
         </div>
     </div>
 </div>
 </body>
 `;
-        } else if (tipo == "false") {
+        } else {
             conteudo.innerHTML =
                 `
 <head>
@@ -112,7 +110,7 @@
         </div>
 
         <div class="troca">
-            <button onclick="clicado(3)">Aromaterapia</button>
+            <button onclick="clicado()">Aromaterapia</button>
         </div>
     </div>
 </div>
@@ -131,7 +129,7 @@
             sessionStorage.setItem("Tipo", true); //True == Aroma
         }
 
-        window.location.href = "../Menus/Menu-base/index.html"
+        window.location.href = "../Menu-base/index.html"
     }
 
     function scroll() {

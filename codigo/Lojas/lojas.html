@@ -2,20 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
-    </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italianno:wght@400;700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@400;700&display=swap" />
-    <title>ProdutosArtes</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italianno:wght@400;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@400;700&display=swap" />
+  <title>ProdutosArtes</title>
 </head>
 
 <main></main>
@@ -24,15 +24,13 @@
 
 <script>
 
-    const tipo = sessionStorage.getItem("Tipo");
-    if (tipo == null)
-        tipo = "true";
+ const tipo = sessionStorage.getItem("Tipo");
 
-    window.onload = function () {
-        let conteudo = document.querySelector("main");
-        if (tipo == "true") {
-            conteudo.innerHTML =
-                `
+  window.onload = function () {
+    let conteudo = document.querySelector("main");
+    if (tipo == "true") {
+      conteudo.innerHTML =
+        `
 <head>
 <link rel="stylesheet" href="lojaAroma.css"/>
 </head>
@@ -113,9 +111,9 @@
   <div id="footer"></div>
 </body>
 `;
-        } else if (tipo == "false") {
-            conteudo.innerHTML =
-                `
+    } else {
+      conteudo.innerHTML =
+        `
 <head>
     <link rel="stylesheet" href="lojaArtes.css" />
 </head>
@@ -199,17 +197,17 @@
   </main>
 </body>
 `;
-        }
     }
+  }
 
-    function clicado() {
-        window.location.href = "../Menus/Menu-base/index.html"
-    }
+  function clicado() {
+    window.location.href = "../Menus/Menu-base/index.html"
+  }
 
-    function scroll() {
-        window.scrollBy({
-            top: 1200,
-            behavior: 'smooth'
-        });
-    }
+  function scroll() {
+    window.scrollBy({
+      top: 1200,
+      behavior: 'smooth'
+    });
+  }
 </script>

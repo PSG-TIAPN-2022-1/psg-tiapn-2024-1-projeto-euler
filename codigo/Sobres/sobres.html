@@ -57,13 +57,11 @@
 
 <script>
     window.onload = function () {
-        let tipo = sessionStorage.getItem("Tipo");
-        if (tipo == null)
-            tipo = "true";
-        if (tipo == "true") {
+        const tipo = sessionStorage.getItem("Tipo");
+
+        if (tipo == "true")
             $('.img-logo').prop("src", "img/logoAroma-trans.png");
-        }
-        else if (tipo == "false")
+        else
             $('.img-logo').prop("src", "img/kellyLogo.png");
 
     } 

@@ -94,9 +94,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     };
 
     window.onload = function () {
-        let tipo = sessionStorage.getItem("Tipo");
-        if (tipo == null)
-            tipo = "true";
+        const tipo = sessionStorage.getItem("Tipo");
+
         if (tipo == "true")
             $('.img-logo').prop("src", "img/logoAroma.jpg");
         else

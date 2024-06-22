@@ -203,12 +203,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <script>
     window.onload = function () {
-        let tipo = sessionStorage.getItem("Tipo");
-        if (tipo == null)
-            tipo = "true";
+        const tipo = sessionStorage.getItem("Tipo");
+
         if (tipo == "true")
             $('#logo').prop("src", "img/logoAroma.jpg");
-        else if(tipo == "false")
+        else
             $('#logo').prop("src", "img/kellyLogo.png");
 
     } 
