@@ -64,7 +64,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/codigo/assets/planta3-1024x522.png');
+    background-image: url('img/planta3-1024x522.png');
     background-repeat: no-repeat;
     background-position: center center; /* Ajuste a posição conforme necessário */
     background-size: cover;
@@ -211,7 +211,7 @@ footer{
     margin-left: 0.1rem;
 }
 body {
-    background-image: url('../../assets/planta3-1024x522.png');
+    background-image: url('img/planta3-1024x522.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size:200%;

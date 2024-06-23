@@ -1,6 +1,6 @@
 
 body {
-    background-image: url('../assets/ImagemFundo.jpeg');
+    background-image: url('img/fundoLoja.jpeg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size:95rem;  
@@ -196,7 +196,7 @@ footer{
     margin-left: 0.1rem;
 }
 body {
-    background-image: url('../../assets/ImagemFundo.jpeg');
+    background-image: url('img/fundoLoja.jpeg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size:100rem;
