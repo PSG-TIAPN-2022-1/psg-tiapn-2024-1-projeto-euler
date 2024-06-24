@@ -256,12 +256,12 @@ O diagrama de solução abaixo descreve o funcionamento do sistema, no qual por 
 
 # Avaliação da Aplicação
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Nas partes destinadas a registro de conta  e login de conta criada, a aplicação utiliza-se perfeitamente do banco de dados executando suas funções de armazenamento de senha e email.
+![docs](images/Register.jpeg)
+![docs](images/Login.jpeg)
 
-
-> Apresente os cenários de testes utilizados na realização dos testes da
-> sua aplicação. Escolha cenários de testes que demonstrem os requisitos
-> sendo satisfeitos.
+Na parte de uso do blog o banco de dados é utilizado e apenas usuários que possuirem conta irão poder comentar
+![docs](images/Blog.png)
 
 ## Plano de Testes
 
