@@ -250,14 +250,9 @@ A interação do usuário com o sistema vai ser conduzida da seguinte maneira: a
 
 ## Arquitetura da solução
 
-......  COLOQUE AQUI O SEU TEXTO E O DIAGRAMA DE ARQUITETURA .......
+O diagrama de solução abaixo descreve o funcionamento do sistema, no qual por meio de uma conexão com internet e da hospedagem fornecida pelo Hostgator, o usuário conseguirá acessar através de um dispositivo a página web com as seguintes ferramentas: HTML, CSS, Javascript e PHP. Além disso, dados do usuário, produtos disponíveis na loja e comentários feitos por usuários serão salvos no banco de dados.
 
-> Inclua um diagrama da solução e descreva os módulos e as tecnologias
-> que fazem parte da solução. Discorra sobre o diagrama.
-> 
-> **Exemplo do diagrama de Arquitetura**:
-> 
-> ![Exemplo de Arquitetura](images/arquitetura-exemplo.png)
+![Arquitetura](images/arquitetura.png)
 
 
 # Avaliação da Aplicação
