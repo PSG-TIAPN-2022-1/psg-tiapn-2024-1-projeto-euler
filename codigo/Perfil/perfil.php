@@ -8,8 +8,6 @@ $idUsuario = $_SESSION['id'];
 $nome = $_SESSION['nome'];
 $email = $_SESSION['email'];
 
-$idUsuario = 1;
-
 //Quantidade de posts
 $sql_code = "SELECT * FROM ender WHERE userID = $idUsuario";
 $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL" . $mysqli->error);
@@ -87,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <body>
     <div class="header">
-        <img src="" alt="" width="5%" style="margin-left: 5%;" id="logo">
+        <img src="" alt="" width="5%" style="margin-left: 5%;" id="logo" onclick="clicado()">
         <ul class="navbar">
             <li id="navLi" class="navItem"><a href="../Menus/Menu-base/index.html">Menu</a></li>
             <li id="navLi" class="navItem"><a href="../Blog/blog.php">Blog</a></li>
@@ -98,7 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
     <main>
         <div id="userInfo">
-            <img src="img/iconPerfil.jpeg" alt="" width="20%">
+            <img src="img/iconPerfil.png" alt="" width="20%">
             <div>
                 <ol class="list-group list-group-numbered">
                     <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -217,4 +215,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $('#logo').css("width", "20%");
         }
     } 
+
+    function clicado(){
+        window.location.href = "../Menus/Menu-base/index.html"
+    }
 </script>
