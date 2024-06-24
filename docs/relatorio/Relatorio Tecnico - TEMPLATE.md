@@ -302,11 +302,9 @@ A coesão de informações e aproximação de dados entre tabelas é um dos gran
 
 # Referências
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Inclua todas as referências (livros, artigos, sites, etc) utilizados
-> no desenvolvimento do trabalho.
-> 
 > **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+> - [WampServer](https://wampserver.aviatechno.net/)
+> - [PHP Docs](https://www.php.net/docs.php)
+> - [Ciclo BPMN](https://www.euax.com.br/2018/10/as-is-to-be-na-melhoria-de-processos/#:~:text=AS%2DIS%20%C3%A9%20a%20vis%C3%A3o,sin%C3%B4nimo%20para%20an%C3%A1lise%20de%20processos.)
+> - [Modelagem de processos](https://zeev.it/blog/como-fazer-modelagem-de-processos/#:~:text=A%20modelagem%20de%20processos%20%C3%A9,dos%20processos%20de%20uma%20empresa.)
+> - [Persona](https://www.rdstation.com/blog/marketing/persona-o-que-e/)
