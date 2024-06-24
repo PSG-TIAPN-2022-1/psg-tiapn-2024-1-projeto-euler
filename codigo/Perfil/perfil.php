@@ -57,6 +57,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $sql_code = "INSERT INTO ender (rua, bairro, cidade, estado, numCasa, CEP, userID) VALUES ('$ruaInp', '$bairroInp', '$cidadeInp', '$estadoInp', '$numCasaInp', '$CEPInp', '$idUsuario')";
     $sql_query = $mysqli->query($sql_code) or die($aviso = "Falha na execução do código SQL" . $mysqli->error);
+    
+    header("Location: ../Perfil/perfil.php");
 }
 ?>
 
@@ -163,11 +165,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <label for="exampleFormControlInput1" class="form-label">CEP</label>
                         <input type="number" class="form-control" id="exampleFormControlInput1" name="CEP">
                     </div>
-                    <button type="submit">Enviar</button>
+                    <div class="modal-footer">
+                        <button type="submit">Enviar</button>
+                    </div>
                 </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
 
