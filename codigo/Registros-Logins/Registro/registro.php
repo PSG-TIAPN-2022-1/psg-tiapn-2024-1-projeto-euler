@@ -21,7 +21,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $sql_code = "INSERT INTO user (nome, email, senha) VALUES ('$nome','$email','$senha')";
         $sql_query = $mysqli->query($sql_code) or die($aviso = "Falha na execução do código SQL" . $mysqli->error);
 
-        header("Location: ../Menus/Menu-base/index.html");
+        $sql_code = "SELECT userID FROM user WHERE email = '$email'";
+        $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL" . $mysqli->error);
+
+        $queryResult = $sql_query->fetch_assoc();
+
+        $idUsuario = $queryResult['userID'];
+
+        $sql_code = "INSERT INTO ender (userID) VALUES ('$idUsuario')";
+        $sql_query = $mysqli->query($sql_code) or die($aviso = "Falha na execução do código SQL" . $mysqli->error);
+        header("Location: ../Login/login.php");
     } else {
         $aviso = "Falha ao registrar! E-mail já está sendo utilizado";
     }
@@ -85,9 +94,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         else
             $('.img-logo').prop("src", "img/kellyLogo-vertical.png");
-    } 
+    }
 
-    function clicado(){
+    function clicado() {
         window.location.href = "../../Menus/Menu-base/index.html"
     }
 </script>
