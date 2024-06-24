@@ -284,16 +284,6 @@ Usuário: Acessa página inicial > Seleciona aba sobre o tema desejado > Tenta a
 > - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
 > -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
 
-## Ferramentas de Testes (Opcional)
-
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Comente sobre as ferramentas de testes utilizadas.
-> 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
-
 ## Registros de Testes
 
 Nossos testes indicaram falhas e acertos crítivos para o desenvolvimento do projeto, principalmente no que se trata de obter uma série de informações de um segmento personalizado do site. Acertamos em permitir que apenas usuários logados façam acesso ao perfil, isso controla o acesso não só as informações pessoais como na criação de linhas na tabela de endereços de usuário. Tal perspectiva trás consequências de necessitar compartilhar recursos com a tabela de comentários, essa que não possui controle de qual usuário comentou e permite qualquer um faça essa interação.
