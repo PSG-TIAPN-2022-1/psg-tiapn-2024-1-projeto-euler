@@ -301,13 +301,9 @@ Usuário: Acessa página inicial > Seleciona aba sobre o tema desejado > Tenta a
 
 ## Registros de Testes
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Nossos testes indicaram falhas e acertos crítivos para o desenvolvimento do projeto, principalmente no que se trata de obter uma série de informações de um segmento personalizado do site. Acertamos em permitir que apenas usuários logados façam acesso ao perfil, isso controla o acesso não só as informações pessoais como na criação de linhas na tabela de endereços de usuário. Tal perspectiva trás consequências de necessitar compartilhar recursos com a tabela de comentários, essa que não possui controle de qual usuário comentou e permite qualquer um faça essa interação.
 
-> Discorra sobre os resultados do teste. Ressaltando pontos fortes e
-> fracos identificados na solução. Comente como o grupo pretende atacar
-> esses pontos nas próximas iterações. Apresente as falhas detectadas e
-> as melhorias geradas a partir dos resultados obtidos nos testes.
-
+A coesão de informações e aproximação de dados entre tabelas é um dos grandes desafios no desenvolvimento do site em conjunto ao seu banco de dados. Permitir que o comentário esteja sempre conectado a postagem, assim como, os endereços estejam vinculados ao perfil é o grande resultado desses testes. Seja a vinculação de dados o exato objetivo para as próximas interações, além de se fundamentalizar nesses o ambiente para os próximos testes. Dessa forma melhorar ainda mais o projeto em questão.
 
 # Referências
 
