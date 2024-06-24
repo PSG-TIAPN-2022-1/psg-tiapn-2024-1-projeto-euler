@@ -277,7 +277,7 @@ Usuário: Acessa página inicial > Seleciona aba sobre o tema desejado > Realiza
 
 ou
 
-Usuário: Acessa página inicial > Seleciona aba sobre o tema desejado > Tenta acessar algum produto ou realizar comentários > Obrigatoriamente é levado para a página de cadastro e login > Continua o fluxo normalmente após fazer o login
+Usuário: Acessa página inicial > Seleciona aba sobre o tema desejado > Tenta acessar algum produto > Obrigatoriamente é levado para a página de cadastro e login > Continua o fluxo normalmente após fazer o login
 
 > Enumere quais cenários de testes foram selecionados para teste. Neste
 > tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo
