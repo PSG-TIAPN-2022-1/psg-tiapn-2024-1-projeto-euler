@@ -118,6 +118,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $sql_code = "INSERT INTO coment (comentText, postID) VALUES ('$comentText', '1')";
         $sql_query = $mysqli->query($sql_code) or die($aviso = "Falha na execução do código SQL" . $mysqli->error);
     }
+
+    header("Location: ../Blog/blog.php");
 }
 
 ?>
