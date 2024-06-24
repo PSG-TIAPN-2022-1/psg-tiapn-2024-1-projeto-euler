@@ -243,20 +243,10 @@ Interagir com o Público: Responder a comentários e mensagens, realizar concurs
 ## Tecnologias Utilizadas
 
 Para implementar nossa solução, utilizamos as seguintes tecnologias e ferramentas: começando pela criação dos wireframes através do Figma, partindo para o desenvolvimento Front-end, utilizamos as linguagens HTML, CSS e Javascript. Para o desenvolvimento Back-end utilizamos PHP. Atrelado ao Front e Back-end utilizamos a seguinte IDE e ferramentas de desenvolvimento: Visual Studio Code, GitHub, MySQL para o gerenciamento do banco de dados e Hostgator para hospedagem.
+
 A interação do usuário com o sistema vai ser conduzida da seguinte maneira: ao entrar no site o usuário poderá acessar as páginas principais sem a realização do cadastro antecipadamente, haverá uma opção de perfil para caso ele queira cadastrar e fazer login assim que abrir o menu principal, ao fazer login, essa informação é enviada ao banco de dados e permite que esse usuário seja capaz de acessar e comprar os produtos da loja. Ao realizar uma compra, o Back-end envia uma resposta de confirmação para o Front e atualiza o estado da compra. Além disso, com o login feito, o usuário será possibilitado de postar comentários no blog, esses comentários ficarão salvos no banco dados, permitindo que outros usuários também os vejam.
 
-> Descreva aqui qual(is) tecnologias você vai usar para resolver o seu
-> problema, ou seja, implementar a sua solução. Liste todas as
-> tecnologias envolvidas, linguagens a serem utilizadas, serviços web,
-> frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
-> Apresente também uma figura explicando como as tecnologias estão
-> relacionadas ou como uma interação do usuário com o sistema vai ser
-> conduzida, por onde ela passa até retornar uma resposta ao usuário.
-> 
-> Inclua os diagramas de User Flow, esboços criados pelo grupo
-> (stoyboards), além dos protótipos de telas (wireframes). Descreva cada
-> item textualmente comentando e complementando o que está apresentado
-> nas imagens.
+
 
 ## Arquitetura da solução
 
@@ -281,10 +271,12 @@ A interação do usuário com o sistema vai ser conduzida da seguinte maneira: a
 
 ## Plano de Testes
 
-......  COLOQUE AQUI O SEU TEXTO ......
-Foi planejado os possíveis fluxos e decisões que um novo usuário poderia tomar, descrevendo os 
-Usuário: Acessa página inicial > Seleciona aba sobre o tema desejado > Realiza o cadastro e faz login > Acessa o restante do site > Insere dados necessários para realizar compra ou 
+Foi planejado os possíveis fluxos e decisões que um novo usuário poderia tomar, fluxos que foram planejados através da modelagem TO-BE e AS-IS.
+
+Usuário: Acessa página inicial > Seleciona aba sobre o tema desejado > Realiza o cadastro e faz login > Acessa o restante do site > Insere dados necessários para realizar compra ou comentário
+
 ou
+
 Usuário: Acessa página inicial > Seleciona aba sobre o tema desejado > Tenta acessar algum produto ou realizar comentários > Obrigatoriamente é levado para a página de cadastro e login > Continua o fluxo normalmente após fazer o login
 
 > Enumere quais cenários de testes foram selecionados para teste. Neste
