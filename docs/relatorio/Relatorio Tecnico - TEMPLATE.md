@@ -302,7 +302,6 @@ A coesão de informações e aproximação de dados entre tabelas é um dos gran
 
 # Referências
 
-> **Links Úteis**:
 > - [WampServer](https://wampserver.aviatechno.net/)
 > - [PHP Docs](https://www.php.net/docs.php)
 > - [Ciclo BPMN](https://www.euax.com.br/2018/10/as-is-to-be-na-melhoria-de-processos/#:~:text=AS%2DIS%20%C3%A9%20a%20vis%C3%A3o,sin%C3%B4nimo%20para%20an%C3%A1lise%20de%20processos.)
