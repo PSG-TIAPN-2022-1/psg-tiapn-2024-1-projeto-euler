@@ -29,11 +29,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             session_start();
 
-            $_SESSION['id'] = $usuario['id'];
+            $_SESSION['id'] = $usuario['userID'];
             $_SESSION['nome'] = $usuario['nome'];
             $_SESSION['email'] = $usuario['email'];
 
-            header("Location: ../Menus/Menu-base/index.html");
+            header("Location: ../../Menus/Menu-base/index.html");
         } else {
             $aviso = "Falha ao logar! E-mail ou senha incorretos";
         }
@@ -74,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <button type="submit" class="btn">Enviar</button>
             </form>
             <p id="regOpn">Novo neste site? <a
-                    href="/projetoEuler/codigo/Registros-Logins/Registro/Registro.php">Registre-se</a></p>
+                    href="../../Registros-Logins/Registro/Registro.php">Registre-se</a></p>
             <p id="aviso"><?php echo $aviso ?></p>
         </div>
     </div>
@@ -104,7 +104,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } 
 
     function clicado(){
-        window.location.href = "../Menus/Menu-base/index.html"
+        window.location.href = "../../Menus/Menu-base/index.html"
     }
 </script>
 

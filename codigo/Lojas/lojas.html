@@ -42,7 +42,7 @@
       <li class="navItem"><a href="../Blog/blog.php">Blog</a></li>
       <li class="navItem" id="current"><a>Loja</a></li>
       <li class="navItem"><a href="../Sobres/sobres.html">Sobre</a></li>
-      <li><img src="img/profileIcon.png" alt="" width="10%" id="logoProfile"></li>
+      <li><img src="img/profileIcon.png" alt="" width="10%" id="logoProfile" onclick="profile()"></li>
     </ul>
   </div>
   <main class="main">
@@ -128,7 +128,7 @@
         <li class="navItem" id="current"><a>Loja</a></li>
         <li class="navItem"><a href="../Sobres/sobres.html">Sobre</a></li>
         <li>
-          <img src="img/profileIcon.png" alt="" id="logoProfile" />
+          <img src="img/profileIcon.png" alt="" id="logoProfile" onclick="profile()"/>
         </li>
       </ul>
     </header>
@@ -203,6 +203,10 @@
   function clicado() {
     window.location.href = "../Menus/Menu-base/index.html"
   }
+
+  function profile() {
+        window.location.href = "../Perfil/perfil.php"
+    }
 
   function scroll() {
     window.scrollBy({

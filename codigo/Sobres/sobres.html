@@ -22,7 +22,7 @@
             <li class="navItem"><a href="../Blog/blog.php">Blog</a></li>
             <li class="navItem"><a href="../Lojas/lojas.html">Loja</a></li>
             <li class="navItem" id="current"><a>Sobre</a></li>
-            <li><img src="img/profileIcon.png" alt="" width="10%" id="logoProfile"></li>
+            <li><img src="img/profileIcon.png" alt="" width="10%" id="logoProfile" onclick="profile()"></li>
         </ul>
     </div>
     <div class="main">
@@ -68,6 +68,10 @@
             $('.img-logo').css("width", "20%");
         }
 
+    }
+
+    function profile() {
+        window.location.href = "../Perfil/perfil.php"
     }
 
     function clicado() {

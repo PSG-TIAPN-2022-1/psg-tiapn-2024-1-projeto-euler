@@ -9,7 +9,7 @@
     <title>Menu - Kelly Fonseca</title>
 </head>
 
-<main></main>
+<main ></main>
 
 </html>
 
@@ -33,7 +33,7 @@
         <li class="navItem"><a href="../../Blog/blog.php">Blog</a></li>
         <li class="navItem"><a href="../../Lojas/lojas.html">Loja</a></li>
         <li class="navItem"><a href="../../Sobres/sobres.html">Sobre</a></li>
-        <li><img src="img/profileIcon.png" alt="" width="10%" id="logoProfile"></li>
+        <li><img src="img/profileIcon.png" alt="" width="10%" id="logoProfile" onclick="profile()"></li>
     </ul>
 </div>
 <div class="grid">
@@ -81,7 +81,7 @@
         <li class="navItem"><a href="../../Blog/blog.php">Blog</a></li>
         <li class="navItem"><a href="../../Lojas/lojas.html">Loja</a></li>
         <li class="navItem"><a href="../../Sobres/sobres.html">Sobre</a></li>
-        <li><img src="img/profileIcon.png" alt="" width="10%" id="logoProfile"></li>
+        <li><img src="img/profileIcon.png" alt="" width="10%" id="logoProfile" onclick="profile()"></li>
     </ul>
 </div>
 <div class="grid">
@@ -130,6 +130,10 @@
         }
 
         window.location.href = "../Menu-base/index.html"
+    }
+
+    function profile() {
+        window.location.href = "../../Perfil/perfil.php"
     }
 
     function scroll() {

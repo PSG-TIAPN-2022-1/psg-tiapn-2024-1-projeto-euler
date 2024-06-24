@@ -84,11 +84,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $('.img-logo').prop("src", "img/logoAroma.jpg");
         }
         else
-            $('.img-logo').prop("src", "img/kellyLogo.png");
+            $('.img-logo').prop("src", "img/kellyLogo-vertical.png");
     } 
 
     function clicado(){
-        window.location.href = "../Menus/Menu-base/index.html"
+        window.location.href = "../../Menus/Menu-base/index.html"
     }
 </script>
 

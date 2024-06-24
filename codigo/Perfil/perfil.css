@@ -1,0 +1,138 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+}
+
+a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 20px gray;
+    height: 10vh;
+}
+#current{
+    color: gray;
+    cursor: default;
+}
+
+
+#logoProfile {
+    width: 30%;
+    height: 60%;
+    margin-bottom: 10%;
+}
+
+#liLogo{
+    list-style-type: none;
+}
+
+#logoProfile:hover{
+    opacity: 70%;
+    cursor: pointer;
+}
+.header ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navLi{
+    list-style-type: none;
+    margin: 1rem;
+    
+}
+.navItem a {
+    display: block;
+    text-align: center;
+    text-decoration: none; 
+    font-size: 1.1rem;
+}
+.header {
+    font-style: normal;
+    color: black;
+    font-size: 200%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display:flex;
+    align-items: center;
+}
+
+main{
+    justify-content: center;
+    text-align: center;
+}
+
+#userInfo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 5%;
+}
+
+#userEnder{
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+#cardEnder{
+    padding: 5%;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+
+#itensEnder{
+    text-align: left;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-header{
+    justify-content: space-between;
+  }
+
+  #btnSair{
+    text-decoration: none;
+    color: black;
+  }

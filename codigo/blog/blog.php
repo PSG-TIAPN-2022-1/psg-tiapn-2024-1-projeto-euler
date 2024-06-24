@@ -147,7 +147,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <li class="navItem" id="current"><a>Blog</a></li>
             <li class="navItem"><a href="../Lojas/lojas.html">Loja</a></li>
             <li class="navItem"><a href="../Sobres/sobres.html">Sobre</a></li>
-            <li><img src="img/profileIcon.png" alt="Profile Icon" id="logoProfile"></li>
+            <li><img src="img/profileIcon.png" alt="Profile Icon" id="logoProfile" onclick="profile()"></li>
         </ul>
     </div>
     <div class="container">
@@ -218,6 +218,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     function clicado(){
         window.location.href = "../Menus/Menu-base/index.html"
+    }
+
+    function profile() {
+        window.location.href = "../Perfil/perfil.php"
     }
 </script>
 
