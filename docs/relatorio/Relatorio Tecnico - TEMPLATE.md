@@ -255,11 +255,12 @@ O diagrama de solução abaixo descreve o funcionamento do sistema, no qual por 
 
 
 # Avaliação da Aplicação
-
+## Login e cadastro
 Nas partes destinadas a registro de conta  e login de conta criada, a aplicação utiliza-se perfeitamente do banco de dados executando suas funções de armazenamento de senha e email.
 ![docs](images/Register.jpeg)
 ![docs](images/Login.jpeg)
 
+## Blog
 Na parte de uso do blog o banco de dados é utilizado e apenas usuários que possuirem conta irão poder comentar
 ![docs](images/Blog.png)
 
